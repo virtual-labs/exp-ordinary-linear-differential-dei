@@ -8,14 +8,18 @@ The equation <br>
 y’’+Py’+Qy=f(x) 					…(i) <br>
 is a second order linear differential equation with constant coefficients, where P, Q&isin;R and f:R→R is a continuous function. If f(x)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients. <br>
 #### 3. Standard method of solution:
-In this section, we present the standard method to obtain the solution of equation (i). <br>
+In this section, we present the standard method to obtain the solution of equation (i). <br> 
+
 Consider the equation amD<sup>2</sup>+bm+c=0, which is called the auxiliary equation. Then y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants and m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by y<sub>c</sub>. <br>
+
 A specific function g(x) which satisfies equation (i) is called particular integral (P.I.) and is denoted by y<sub>p</sub>. Any solution of equation (i) is of the form y(x)≡y<sub>c</sub>+y<sub>p</sub>=c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>+g(x). This is called the complete integral (C.I.). <br>
+
 In particular, if f(x)=0, then complementary function gives all solutions of equation (i), so that C.I.=C.F, that is its solution is given by y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>, where  c<sub>1</sub>, c<sub>2</sub> are constants and  m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation am<sup>2</sup> +bm+c=0 <br>
-Note. There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. 
+
+**Note.** There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. 
 #### 4. Examples:
-(i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D2(y), which implies that (D2-I)y=0. Clearly auxiliary equation is m2-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c1, c2 are constants.
-(ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C1ex+C2e-x -sinx, where C1, C2 are constants.
+(i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D2(y), which implies that (D2-I)y=0. Clearly auxiliary equation is m2-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c<sub>1</sub>, c<sub>2</sub> are constants.
+(ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C1ex+C2e-x -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
 #### 5. Understanding:
 ##### 5.1. Collection of differentiable functions as a vector space:
 Collection of differentiable functions E from R to R is a vector space over R with addition and scalar multiplication of functions.
@@ -32,7 +36,7 @@ As given in Section 3, a solution of linear differential equation is given by yc
 **Standard method for solution:**
 (a) The auxiliary equation is m2-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c1e3x+c2e2x, where c1, c2 are constants.
 (b) Clearly y=ex satisfies the given differential equation. Thus ex is a particular integral.
-(c) Thus complete integral y(x)=c1e3x +c2e2x +ex, where c1, c2 are constants.
+(c) Thus complete integral y(x)=c1e3x +c2e2x +ex, where c<sub>1</sub>, c<sub>2</sub> are constants.
 Verification:
 Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2ex which is the R.H.S. of the given differential equation.
 **Understanding of complete integral:**
