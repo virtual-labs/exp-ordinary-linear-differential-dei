@@ -10,16 +10,16 @@ is a second order linear differential equation with constant coefficients, where
 #### 3. Standard method of solution:
 In this section, we present the standard method to obtain the solution of equation (i). <br> 
 
-Consider the equation amD<sup>2</sup>+bm+c=0, which is called the auxiliary equation. Then y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants and m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by y<sub>c</sub>. <br>
+Consider the equation am<sup>2</sup>+bm+c=0, which is called the auxiliary equation. Then y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants and m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by y<sub>c</sub>. <br>
 
-A specific function g(x) which satisfies equation (i) is called particular integral (P.I.) and is denoted by y<sub>p</sub>. Any solution of equation (i) is of the form y(x)≡y<sub>c</sub>+y<sub>p</sub>=c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>+g(x). This is called the complete integral (C.I.). <br>
+A specific function g(x) which satisfies equation (i) is called particular integral (P.I.) and is denoted by y<sub>p</sub>. Any solution of equation (i) is of the form y(x)≡y<sub>c</sub>+y<sub>p</sub>=c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>+g(x). This is called the complete integral (C.I.). <br>
 
-In particular, if f(x)=0, then complementary function gives all solutions of equation (i), so that C.I.=C.F, that is its solution is given by y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub>D<sup>x</sup>+c<sub>2</sub>eD<sup>m</sup>D<sub>2</sub><sup>x</sup>, where  c<sub>1</sub>, c<sub>2</sub> are constants and  m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation am<sup>2</sup> +bm+c=0 <br>
+In particular, if f(x)=0, then complementary function gives all solutions of equation (i), so that C.I.=C.F, that is its solution is given by y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>, where  c<sub>1</sub>, c<sub>2</sub> are constants and  m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation am<sup>2</sup> +bm+c=0 <br>
 
 **Note.** There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. 
 #### 4. Examples:
-(i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D2(y), which implies that (D2-I)y=0. Clearly auxiliary equation is m2-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c<sub>1</sub>, c<sub>2</sub> are constants.
-(ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C1ex+C2e-x -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
+(i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D<sup>2</sup>(y), which implies that (D<sup>2</sup>-I)y=0. Clearly auxiliary equation is m<sup>2</sup>-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c<sub>1</sub>, c<sub>2</sub> are constants.
+(ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C<sub>1</sub>e<sup>x</sup>+C<sub>2</sub>e<sup>-x</sup> -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
 #### 5. Understanding:
 ##### 5.1. Collection of differentiable functions as a vector space:
 Collection of differentiable functions E from R to R is a vector space over R with addition and scalar multiplication of functions.
