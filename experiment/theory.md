@@ -35,22 +35,22 @@ Recall that solution set of a linear map T(y)=r, as described in Section 5.4, is
 
 As given in Section 3, a solution of linear differential equation is given by y<sub>c</sub>+y<sub>p</sub>, where y<sub>c</sub> is a solution of the homogenous counterpart of the given differential equation and y<sub>c</sub> is a particular solution of the given differential equation. Here it may be noted that y<sub>p</sub> corresponds to y<sub>o</sub> and y<sub>c</sub> corresponds to an element of kerT.
 ##### 5.6. Example: 
-Let y’’-5y’+6y=2e<sup>x</sup> be the given differential equation.
-**Standard method for solution:**
-(a) The auxiliary equation is m<sup>2</sup>-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, wherec<sub>1</sub>, c<sub>2</sub> are constants.
-(b) Clearly y=e<sup>x</sup> satisfies the given differential equation. Thus ex is a particular integral.
-(c) Thus complete integral y(xc<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants.
-Verification:
-Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2ex which is the R.H.S. of the given differential equation.
-**Understanding of complete integral:**
-This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation.
-The linear map arising out of the given differential equation is T≡D2-5D+6I and the linear map equation is T(y)=2ex. The solution set of linear map equation is the solution set of the given differential equation.
-#### 6. Example (Engineering problem):
-In an RLC circuit, at t=0, a current of 2 ampere flows with resistance R=40 ohm, inductance L=2/5 henry, and capacitance C=10−2 farad. The current I≡dQ/dt is to be determined, where Q is the charge flowing in the circuit at t>0 if Q(0)=1, Q′(0)=2. It is assumed here that voltage E(t)=0, for t>0.
+Let y’’-5y’+6y=2e<sup>x</sup> be the given differential equation. <br>
+**Standard method for solution:** <br>
+(a) The auxiliary equation is m<sup>2</sup>-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, wherec<sub>1</sub>, c<sub>2</sub> are constants. <br>
+(b) Clearly y=e<sup>x</sup> satisfies the given differential equation. Thus e<sup>x</sup> is a particular integral. <br>
+(c) Thus complete integral y(xc<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
+**Verification:**  <br>
+Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2e<sup>x</sup> which is the R.H.S. of the given differential equation. <br>
+**Understanding of complete integral:**  <br>
+This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. <br>
+The linear map arising out of the given differential equation is T≡D2-5D+6I and the linear map equation is T(y)=2ex. The solution set of linear map equation is the solution set of the given differential equation. <br>
+#### 6. Example (Engineering problem): <br>
+In an RLC circuit, at t=0, a current of 2 ampere flows with resistance R=40 ohm, inductance L=2/5 henry, and capacitance C=10<sup>−2</sup> farad. The current I≡dQ/dt is to be determined, where Q is the charge flowing in the circuit at t>0 if Q(0)=1, Q′(0)=2. It is assumed here that voltage E(t)=0, for t>0. <br>
 
-The given problem is mathematically represented by an initial value problem: the differential equation for the charge Q across the circuit using Kirchhoff’s law is 2/5Q′′+40Q′+100Q=E(t) and the initial condition are Q(0)=1, Q′(0)=2. To find its solution and the required current, we proceed as follows. 
-The given differential equation reduces to 2Q′′+200Q′+500Q=0. The auxiliary equation of the given differential equation is 2m2+200m+500=0. Thus m=130 or 70. Therefore the complete integral of the given differential equation is                                                     
-                      Q=c1e130t+c2e70t,                      …(i)
-where c1, c2 are constants. Now differentiating equation (i) yields
-                           Q′=130c1e130t+70c2e70t            … (ii)
-Using given initial conditions, we obtain c1+c2=Q(0)=1 and 130c1+70c2=Q′(0)=2. Therefore c2=128/60 and c1=-68/60. Thus Q=128/60e130t-68/60e70t. Required current I≡dQ/dt=130.(128/60)e130t+70.(-68/60)e70t.
+The given problem is mathematically represented by an initial value problem: the differential equation for the charge Q across the circuit using Kirchhoff’s law is 2/5Q′′+40Q′+100Q=E(t) and the initial condition are Q(0)=1, Q′(0)=2. To find its solution and the required current, we proceed as follows.  <br>
+The given differential equation reduces to 2Q′′+200Q′+500Q=0. The auxiliary equation of the given differential equation is 2m<sup>2</sup>+200m+500=0. Thus m=130 or 70. Therefore the complete integral of the given differential equation is     <br>                                                 
+                      Q=c<sub>1</sub>e<sup>130t</sup>+c<sub>2</sub>e<sup>70t</sup>,                      …(i) <br>
+where c<sub>1</sub>, c<sub>2</sub> are constants. Now differentiating equation (i) yields  <br>
+                           Q′=130c<sub>1</sub>e<sup>130t</sup>+70c<sub>2</sub>e<sup>70t</sup>,           … (ii)  <br>
+Using given initial conditions, we obtain c<sub>1</sub>+c<sub>2</sub>=Q(0)=1 and 130c<sub>1</sub>+70c<sub>2</sub>=Q′(0)=2. Therefore c<sub>2</sub>=128/60 and c<sub>1</sub>+=-68/60. Thus Q=128/60e<sup>130t</sup>-68/60e<sup>70t</sup>. Required current I≡dQ/dt=130.(128/60)e<sup>130t</sup>+70.(-68/60)e<sup>70t</sup>.
