@@ -13,17 +13,6 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Let $A=\\begin{bmatrix} -1  & 1 \\\\ -2 & 2 \\end{bmatrix}$ and $B=\\begin{bmatrix} -1  &  2 | 0 \\\\ -2 & -1 | 0 \\end{bmatrix}$. Then the rankA and rankB are respectively",
-      "answers": {
-        "a": " 2 & 1",
-        "b": "1 & 2 ",
-        "c": "2 & 2",
-        "d": "0 & 1"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
       "question": "The complementary function of the differential equation 3y’’-12y=0",
       "answers": {
         "a": "c<sub>1</sub>e<sup>2x</sup>+c<sub>2</sub>e<sup>-x</sup>",
@@ -46,36 +35,25 @@
       "difficulty": "beginner"
     },
     {
-        "question": "Let $A=\\begin{bmatrix} 1  & 1 & 0 \\\\ 0 & 1 &  0 \\\\ 0 & 0 & 0 \\end{bmatrix}$",
+        "question": "Let T(y)=r be a linear map equation, where T:F→F is the operator defined as T=D<sup>2</sup>+PD+QI and P, Q&isin;R. Then its solution is",
       "answers": {
-        "a": "A is invertible and A^2 is invertible",
-        "b": "A is not invertible and A^2 is invertible",
-        "c": "A is invertible and A^2 is not invertible",
-        "d": "A is not invertible and A^2 is also not invertible"
+        "a": "y<sub>0</sub>+kerT",
+        "b": "y<sub>0</sub>",
+        "c": "kerT",
+        "d": "none of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The function c1e5x+c2e4x+ex is the complete integral and then it satisfies which of the following differential equation",
+       "answers": {
+        "a": "y’’-9y’+20y=2e<sup>x</sup>",
+        "b": "y’’-5y’+20y=0",
+        "c": "y’’-4y’+5y=e<sup>x</sup>",
+        "d": "y’’-9y’+20y=12e<sup>x</sup>"
       },
       "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Let $A=\\begin{bmatrix} 1  & 1 & 0 \\\\ 1 & -1 &  1 \\\\ 2 & 1 & 0 \\end{bmatrix}$",
-      "answers": {
-        "a": "det(A)=2 and det(A^{-1}) does not exist",
-        "b": "det(A)=-1 and det(A^{-1}) exists",
-        "c": "det(A)=1and det(A^{-1}) exists",
-        "d": "None of the above"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Let $A=\\begin{bmatrix} 4  & -1 \\\\ 12 & -3 \\end{bmatrix}$",
-       "answers": {
-        "a": "A is invertible and A=A^2",
-        "b": "A is not invertible and A=A^2",
-        "c": "A is invertible and A≠A^2",
-        "d": "None of the above"
-      },
-      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
