@@ -2,92 +2,72 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following is a differential equation",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "dy/dx+3x",
+        "b": "dy/dx+loge<sup>y</sup>",
+        "c": "dy/dx+cos(dy/dx)",
+        "d": "None"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "If y=sec<sup>2</sup>x+3, then which of the following is true",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "dy/dx=-cosecx.(tanx)",
+        "b": "dy/dx=2secx+3",
+        "c": "dy/dx=2secx.(tanx)",
+        "d": "None"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
      {
-      "question": "This is a Sample Question 2?",
+      "question": "If dy/dx=2x+3, then which of the following cannot be true:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "y=2",
+        "b": "y=x<sup>2</sup>+3x",
+        "c": "y=x<sup>2</sup>+3x+log(529)",
+        "d": "None"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
      {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is true",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "d/dx operates on f(x) and on 2",
+        "b": "d/dx operates on f(x) but not on 2",
+        "c": "d/dx operates on 2 but not on f(x)",
+        "d": "d)d/dx does not operate on both f(x) and 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
      {
-      "question": "This is a Sample Question 2?",
+      "question": "What are the order and the degree of the differential equation d<sup>2</sup>y/dx<sup>2</sup>+y.(dy/dx)<sup>3</sup>=4",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "1 and 2",
+        "b": "2 and 1",
+        "c": "1 and 3",
+        "d": "2 and 3"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
      {
-      "question": "This is a Sample Question 2?",
+      "question": "If y=x<sup>3</sup>, then (dy/dx)<sup>2</sup>+d<sup>2</sup>y/dx<sup>2</sup> equals",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "9x<sup>2</sup>+6x",
+        "b": "9x<sup>4</sup>+6x",
+        "c": "3x<sup>4</sup>+3x",
+        "d": "None of the above"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
-     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+    
   ]
 }
+
