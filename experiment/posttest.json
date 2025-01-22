@@ -1,38 +1,59 @@
-{
+{ 
   "version": 2.0,
   "questions": [
-    {
-      "question": "This is a Sample Question 1?",
+   {
+      "question": "The value of differential operator d<sup>2</sup>y/dx<sup>2</sup> of the equation x<sup>2</sup>+e<sup>3x</sup>-y<sup>2</sup>=0",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "2+9e<sup>3x</sup>-2 ",
+        "b": "2x+3e<sup>3x</sup>-2y ",
+        "c": "2+3e<sup>3x</sup>-2",
+        "d": "None of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The complementary function of the differential equation 3y’’-12y=0",
+      "answers": {
+        "a": "c<sub>1</sub>e<sup>2x</sup>+c<sub>2</sub>e<sup>-x</sup>",
+        "b": "c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>-2x</sup>",
+        "c": "c<sub>1</sub>e<sup>-2x</sup>+c<sub>2</sub>e<sup>2x</sup>",
+        "d": "c<sub>1</sub>e<sup>2x</sup>+c<sub>2</sub>e<sup>-3x</sup>"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The complete integral of the differential equation 2y’’-3y=-cosx",
+      "answers": {
+        "a": "cosx ",
+        "b": "sinx",
+        "c": "-cosx ",
+        "d": "-sinx"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+        "question": "Let T(y)=r be a linear map equation, where T:F→F is the operator defined as T=D<sup>2</sup>+PD+QI and P, Q&isin;R. Then its solution is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "y<sub>0</sub>+kerT",
+        "b": "y<sub>0</sub>",
+        "c": "kerT",
+        "d": "none of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The function c1e5x+c2e4x+ex is the complete integral and then it satisfies which of the following differential equation",
+       "answers": {
+        "a": "y’’-9y’+20y=2e<sup>x</sup>",
+        "b": "y’’-5y’+20y=0",
+        "c": "y’’-4y’+5y=e<sup>x</sup>",
+        "d": "y’’-9y’+20y=12e<sup>x</sup>"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
