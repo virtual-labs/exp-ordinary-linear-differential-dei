@@ -3,152 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="js/page2.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/main_style.css">
 
 </head>
+
 <style>
-    body{
-        width: 100%;
-        height: 100vh;
-        /*display: flex;*/
-        justify-content: center;
-        align-items: center;
-        /*background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
-        background-color: whitesmoke;
-        font-size: 1.5rem;
-    }
-    .pagehead{
-      display: block;
-      text-align: center;
-      border-top: 2px solid lightseagreen;
-      background: linear-gradient(yellow, lightseagreen);
-      padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-      float:center;
-      margin: 0.5rem;
-      font-size: 32px;
-    }
-    .container{
-        /*border: 1px solid #717377;*/
-        padding: 1rem 3rem;
-        border-radius: 1.2rem;
-        background-color: lightyellow;
-        margin-left: 23%;
-        margin-right: 23%;
-        /*background: transparent;
-        background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
-        box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
-    }
-    .container:hover{
-        border-radius: 0.5rem;
-        box-shadow: 0px 3px 15px rgba(133, 115, 119, 1.0);
-    }
-    #mapimg{
-        width: 30rem;
-        height: auto;
-    }
-    .next{
-        background-color: #04AA6D;
-        color: white;
-        font-size: 18px;
-        margin-top: 0.5rem;
-        align-content: center;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        width:8rem;
-        float:right;
-    }
-    .next:hover {
-      background-color: #ada;
-      color: black;
-    }
-    .previous{
-        display: block;
-        float:left;
-        background-color: #04AA6D;
-        color: white;
-        font-size: 18px;
-        margin-top: 0.5rem;
-        align-content: center;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        width:5rem;
-    }
-    .previous:hover {
-      background-color: #ada;
-      color: black;
-    }
-    canvas {
-    display: block;
-}
-.plane{
-    cursor: crosshair;
-}
-.boxhead{
-    margin:0.5rem 0.5rem 0.5rem 0.5rem;
-}
-input{
-    
-    
-    align-content: center;
-    text-align: center;
-    font-style:bold italic;
-    color:white;
-    border:.5px solid red;
-    color: black;
-    font-size: 1.2rem;
-    width: 3rem;
-}
-/* container */
-.responsive-two-column-grid {
-    display:block;
-}
 
-/* columns */
-.responsive-two-column-grid > * {
-    padding:1rem;
-}
-
-
-.subbtn{
-        height:auto;
-        width:100%;
-        text-align: center;
-        background-color:#38eca7;
-        font-size: 1.7rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
-    }
-    
-.subbtn2{
-        height:auto;
-        width:auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        margin: 0;
-        background: none;
-        border: none;
-        font-size: 1.4rem;
-    }
-/* tablet breakpoint */
-@media (min-width:768px) {
-    .responsive-two-column-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-.s_lst{
-    margin-left: 3rem;
-}
-.s_lst2{
-    margin-left: 14.7rem;
-}
-
-.ques{
+    .ques{
 		color: blue;
 	}
 
@@ -157,18 +20,6 @@ input{
         font-size: 32px;
 	}
 
-    .head1{
-        height:auto;
-        width:100%;
-        text-align: center;
-        background-color:#38eca7;
-        font-size: 1.7rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
-        display: none;
-    }
     #head3{
         height:auto;
         width:100%;
@@ -196,13 +47,21 @@ input{
    
 </style>
 <body>
+    
     <h2 class="pagehead">Ordinary Linear Differential Equations</h2>
+
 <div class="container">
     <button class="subbtn" id="solbtn" >Example</button> <br>
     <p class="subbtnn2">Homogeneous Second Order Linear Equation </p>
+
     <p>Enter values of a, b and c such that b<sup>2</sup>-4ac &ge; 0 is a perfect square and a&ne;0</p>
+
     <form id="checkForm">
-        <input type="number" id="a" name="a" placeholder="a" min="1" required> <label for="a">\(\frac{d^2y}{dx^2} + \)</label> <input type="number" id="b" name="b" placeholder="b" required> <label for="b">\(\frac{dy}{dx} + \)</label> <input type="number" id="c" name="c" placeholder="c" required> = 0 <br> 
+        <input type="number" id="a" name="a" placeholder="a" min="1" required> 
+        <label for="a">\(\frac{d^2y}{dx^2} + \)</label> 
+        <input type="number" id="b" name="b" placeholder="b" required> 
+        <label for="b">\(\frac{dy}{dx} + \)</label> 
+        <input type="number" id="c" name="c" placeholder="c" required> = 0 <br> 
          
         <button type="submit">Submit</button>
         
@@ -214,86 +73,12 @@ input{
     <p id="result"></p>
     <p id="PI"></p>
     <p id="CI"></p>
-    
-    
-
-    
         
 </div>
-<script>
-    // Function to check if a number is a perfect square
-    function isPerfectSquare(num) {
-        return num >= 0 && Math.sqrt(num) % 1 === 0;
-    }
 
-    // Function to handle form submission
-    document.getElementById('checkForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form from submitting normally
-        
-        // Get user input values
-        let a = parseFloat(document.getElementById('a').value);
-        let b = parseFloat(document.getElementById('b').value);
-        let c = parseFloat(document.getElementById('c').value);
-        
-        // Check if 'a' is 0, then set it to 1
-        if (a === 0) {
-                alert("Coefficient 'a' cannot be 0 for a second-order equation. Setting a = 1 by default.");
-                a = 1;
-            }
+<p style="float: center; align-content:right;">
+    <a href="./index.html" class="previous">&laquo; Previous</a></p>
 
-        const auxiliaryEquation = "<b id='head3'>Auxiliary Equation:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+a+"r² + "+b+"r + "+c+" = 0";
-         
-            // Solve the quadratic equation: r = (-b ± √(b² - 4ac)) / 2a
-            const discriminant = b * b - 4 * a * c;
-            const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-            const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-
-            // Step 3: Particular Integral (PI)
-            const particularIntegral = "0"; // Homogeneous equation, so PI = 0
-
-            // Step 4: Complementary Function (CF)
-            const complementaryFunction = `\\(y(x) =  c_₁e^{${root1}x} + c_₂e^{${root2}x}\\)`;
-            const CI = `\\( c_₁e^{${root1}x} + c_₂e^{${root2}x}\\)`;
-
-            // Step 5: Complete Integral (CI)
-            const completeIntegral = `${complementaryFunction} + ${particularIntegral}`;
-
-            // Display the solution
-            const solutionElement = document.getElementById("solution");
-        
-        const equation = '\\(y(x) = c_1 e^{m_1x}+c_2 e^{m_2x}\\)'; // Inline math
-        
-        // Check if the discriminant is a perfect square
-        const resultElement = document.getElementById('result');
-        const auxEq = document.getElementById('auxEq');
-        const roots = document.getElementById('roots');
-        const pi = document.getElementById('PI');
-        const ci = document.getElementById('CI');
-        
-        if (isPerfectSquare(discriminant)) {
-            resultElement.innerHTML = "<b id='head3'>Complementary Function (CF):</b><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+complementaryFunction+" <br> <p style='text-align: center;'>where c<sub>1</sub>, c<sub>2</sub> are constants</p>"; // Use innerHTML for MathJax
-             // Ask MathJax to re-process the content
-             MathJax.typesetPromise([resultElement]).catch(err => console.error(err));
-             auxEq.innerHTML = auxiliaryEquation;
-             roots.innerHTML = "<b id='head3'>Roots:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; r<sub>1</sub> = "+root1+"; r<sub>2</sub> = "+root2+" ";
-            //  pi.innerHTML = "<b id='head3'>Particular Integral (PI) by Hit and Try:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; PI = 0";
-            ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where c<sub>1</sub>, c<sub>2</sub> are constants</p>";
-            MathJax.typesetPromise([ci]).catch(err => console.error(err));
-            document.getElementById('head1').style.display ='block';
-            resultElement.style.color = 'black';
-
-
-           
-            
-           
-        } else {
-            resultElement.textContent = `The discriminant (b² - 4ac) is ${discriminant}, and it is not a perfect square.`;
-            resultElement.style.color = 'red';
-        }
-    });
-
-    
-</script>
 <p style="float: center; align-content:right;">
 <a href="./self-assessment.html" class="next" >Next Page &raquo;</a></p>
 
@@ -301,85 +86,6 @@ input{
 
 </html>
 
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homogeneous Differential Equation Solver</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Second-Order Homogeneous Differential Equation Solver</h1>
-    <p>Equation: <b>d²y/dx² + 5dy/dx + 6y = 0</b></p>
-    <h2>Solution:</h2>
-    <pre id="solution"></pre>
-
-    <script>
-        // Function to solve the equation
-        function solveHomogeneousEquation() {
-            // Step 1: Auxiliary Equation
-            const auxiliaryEquation = "r² + 5r + 6 = 0";
-
-            // Step 2: Roots of the Auxiliary Equation
-            const a = 1; // Coefficient of r²
-            const b = 5; // Coefficient of r
-            const c = 6; // Constant term
-
-            // Solve the quadratic equation: r = (-b ± √(b² - 4ac)) / 2a
-            const discriminant = b * b - 4 * a * c;
-            const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-            const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-
-            // Step 3: Particular Integral (PI)
-            const particularIntegral = "0"; // Homogeneous equation, so PI = 0
-
-            // Step 4: Complementary Function (CF)
-            const complementaryFunction = `C₁e^(${root1}x) + C₂e^(${root2}x)`;
-
-            // Step 5: Complete Integral (CI)
-            const completeIntegral = `${complementaryFunction} + ${particularIntegral}`;
-
-            // Display the solution
-            const solutionElement = document.getElementById("solution");
-            solutionElement.textContent = `
-Step 1: Auxiliary Equation:
-  ${auxiliaryEquation}
-
-Step 2: Roots of the Auxiliary Equation:
-  r₁ = ${root1.toFixed(2)}, r₂ = ${root2.toFixed(2)}
-
-Step 3: Particular Integral (PI):
-  PI = ${particularIntegral}
-
-Step 4: Complementary Function (CF):
-  CF = ${complementaryFunction}
-
-Step 5: Complete Integral (CI):
-  CI = ${completeIntegral}
-`;
-        }
-
-        // Solve and display the solution when the page loads
-        solveHomogeneousEquation();
-    </script>
-</body>
-</html> -->
 
 
 
