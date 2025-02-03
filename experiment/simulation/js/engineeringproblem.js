@@ -1,73 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main_style.css">
-    <title>Engineering Problem</title>
-
-    <style>
-      
-        canvas {
-            display: block;
-            margin: 0 auto;
-        }
-        label {
-            color: blue;
-            font-size: 24px;
-            display: block;
-            margin-top: 1rem;
-        }
-        input[type="range"] {
-            width: 50%;
-            margin: 0.5rem 0;
-        }
-        .value-display {
-            font-size: 1.2rem;
-            color: darkgreen;
-            font-weight: bold;
-        }
-        .submitbtn{
-            width: 15%;
-            border: 1px solid black;
-            background-color: rgb(196, 179, 179);
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h2 class="pagehead">Mathematical Formulation of Engineering Problem</h2>
-    <div class="container">
-        <p>Drag the sliders to choose the values of R, L and C in a given RLC circuit for the evaluation of charge/current</p>
-        <div class="controls">
-            <label for="resistance">R (Resistance in Ω): <span class="value-display" id="resistance-value">10</span></label>
-            <input type="range" id="resistance" value="10" min="0" max="100">
-
-            <label for="inductance">L (Inductance in H): <span class="value-display" id="inductance-value">0.1</span></label>
-            <input type="range" id="inductance" value="0.1" min="0" max="1" step="0.01">
-
-            <label for="capacitance">C (Capacitance in F): <span class="value-display" id="capacitance-value">0.001</span></label>
-            <input type="range" id="capacitance" value="0.001" min="0" max="0.01" step="0.0001">
-<br>
-            <input class="submitbtn" type="submit" onclick="updateEquation()">
-        </div>
-
-        <canvas id="rlcCircuit" width="600" height="400" style="border: 1px solid black;"></canvas>
-
-
-        <p class="head1" id="head1" style="display: none;"><strong>Mathematical Formulation</strong></p>
-        <p id="auxEq2" style="display: none;">Charge Q is given by:</p>
-        <p id="auxEq" style="display: none; font-size: 21px;"></p>
-        <p id="note" style="display: none; font-size: 25px;"><span style="color: blue;">Note:</span> Solution of above equation can be obtained using standard method.</p>
-        
-    </div>
-
-    <p style="float: center; align-content:right;">
-        <a href="./self-assessment.html" class="previous">&laquo; Previous</a></p>
-    <script>
-        const canvas = document.getElementById('rlcCircuit');
+const canvas = document.getElementById('rlcCircuit');
         const ctx = canvas.getContext('2d');
 
         ctx.lineWidth = 3.5;
@@ -147,7 +78,7 @@
             ctx.fillText(`C = ${C} F`, 300, 320);
 
             const img = new Image();
-            img.src = 'images/inductor-line-icon-lg.png';
+            img.src = 'inductor-line-icon-lg.png';
             img.onload = () => {
                 ctx.drawImage(img, 407, 140, 75, 75);
                 ctx.fillText(`L = ${L} H`, 470, 220);
@@ -209,6 +140,3 @@ updateEquation();
 
     
     
-</script>
-</body>
-</html>

@@ -4,111 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Self-Assessment</title>
-  <style>
-    body{
-        width: 100%;
-        height: 100vh;
-        /*display: flex;*/
-        justify-content: center;
-        align-items: center;
-        /*background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
-        background-color: whitesmoke;
-        font-size: 1.5rem;
-    }
-    .pagehead{
-      display: block;
-      text-align: center;
-      border-top: 2px solid lightseagreen;
-      background: linear-gradient(yellow, lightseagreen);
-      padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-      float:center;
-      margin: 0.5rem;
-      font-size: 32px;
-    }
-
-    .next{
-        background-color: #04AA6D;
-        color: white;
-        font-size: 18px;
-        margin-top: 0.5rem;
-        align-content: center;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        width:8rem;
-        float:right;
-    }
-    .quiz-container {
-      max-width: 700px;
-      width: 100%;
-      margin: 20px auto;
-      padding: 20px 36px;
-      background-color: lightyellow;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    .question {
-      margin-bottom: 20px;
-    }
-    .question p {
-      margin: 0 0 10px;
-      font-weight: bold;
-    }
-    .answer-buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .answer-buttons button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    .answer-buttons button:hover {
-      background-color: #ddd;
-    }
-    .result {
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .correct {
-      color: green;
-    }
-    .incorrect {
-      color: red;
-    }
-
-    .highlighted {
-        background-color: #4CAF50; /* Green for correct */
-        color: white;
-    }
-
-    .result.correct {
-        color: green;
-    }
-
-    .result.incorrect {
-        color: red;
-    }
-    .subbtn{
-        height:auto;
-        width:100%;
-        text-align: center;
-        background-color:#38eca7;
-        font-size: 1.5rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
-    }
-  </style>
+  <script defer src="js/self_assessment.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <link rel="stylesheet" type="text/css" href="css/self_assessment.css">
+  
 </head>
+
 <body>
     <h2 class="pagehead">Ordinary Linear Differential Equations</h2>
-  <div class="quiz-container">
+  <div class="container">
+
     <button class="subbtn" id="solbtn" >Self-Assessment</button><br><br>
+
     <div class="question" data-answer="yes">
       <p>&#9679; Complementary Function provides all solution of second order homogeneous linear differential equation with constant co-efficients:</p>
       <div class="answer-buttons">
@@ -117,6 +24,7 @@
       </div>
       <div class="result"></div>
     </div>
+
     <div class="question" data-answer="yes">
       <p>&#9679; Particular Integral provides only one solution of second order linear differential equation with constant co-efficients:</p>
       <div class="answer-buttons">
@@ -125,6 +33,7 @@
       </div>
       <div class="result"></div>
     </div>
+
     <div class="question" data-answer="no">
       <p>&#9679; Particular Integral is always a non-constant function:</p>
       <div class="answer-buttons">
@@ -133,6 +42,7 @@
       </div>
       <div class="result"></div>
     </div>
+
     <div class="question" data-answer="no">
       <p>&#9679; Complete Integral provides only one solution of differential equation:</p>
       <div class="answer-buttons">
@@ -141,6 +51,7 @@
       </div>
       <div class="result"></div>
     </div>
+    
     <div class="question" data-answer="yes">
         <p>&#9679; Voltage in an RLC circuit can be represented by a linear differential equation:</p>
         <div class="answer-buttons">
@@ -151,29 +62,9 @@
       </div>
   </div>
   
+  <p style="float: center; align-content:right;">
+    <a href="./page2.html" class="previous">&laquo; Previous</a></p>
 
-  <script>
-    function checkAnswer(button, userAnswer) {
-        const questionElement = button.closest('.question');
-        const correctAnswer = questionElement.getAttribute('data-answer');
-        const resultElement = questionElement.querySelector('.result');
-        const buttons = questionElement.querySelectorAll('button');
-
-        // Remove previous highlights
-        buttons.forEach(btn => btn.classList.remove('highlighted'));
-
-        // Highlight the clicked button
-        button.classList.add('highlighted');
-
-        if (userAnswer === correctAnswer) {
-            resultElement.textContent = 'Correct!';
-            resultElement.className = 'result correct';
-        } else {
-            resultElement.textContent = 'Incorrect!';
-            resultElement.className = 'result incorrect';
-        }
-    }
-</script>
 <p style="float: center; align-content:right;">
   <a href="./Engineering Problem.html" class="next" >Next Page &raquo;</a></p>
   
