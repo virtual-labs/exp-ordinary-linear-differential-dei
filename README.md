@@ -12,7 +12,7 @@ In this experiment, applications of ordinary linear differential equation and en
 
 <b>Name of Developer | <b> Prof. Gunjan Agrawal
 :--|:--|
-<b> Institute | <b>  Dayalbagh Educational Institute (deemed universty)
+<b> Institute | <b>  Dayalbagh Educational Institute (Deemed Universty)
 <b> Email id|     <b>  dei.gunjan@yahoo.com
 <b> Department |  Mathematics
 
