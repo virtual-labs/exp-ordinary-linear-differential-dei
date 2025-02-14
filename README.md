@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+In this experiment, applications of ordinary linear differential equation and engineering problems has been developed.
 
 <b>Name of Developer | <b> Prof. Gunjan Agrawal
 :--|:--|
