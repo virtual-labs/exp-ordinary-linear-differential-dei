@@ -14,7 +14,7 @@ In this experiment, applications of ordinary linear differential equation and en
 :--|:--|
 <b> Institute | <b>  Dayalbagh Educational Institute (Deemed Universty)
 <b> Email id|     <b>  dei.gunjan@yahoo.com
-<b> Department |  Mathematics
+<b> Department |  <b> Mathematics
 
 ### Contributors List
 
