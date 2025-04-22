@@ -8,13 +8,13 @@
 
 ### About the Experiment 
 
-In this experiment, mathematical model for plane has been determined which leads to the understanding of Euclidean Space.
+In this experiment, applications of ordinary linear differential equation and engineering problems has been developed.
 
 <b>Name of Developer | <b> Prof. Gunjan Agrawal
 :--|:--|
-<b> Institute | <b>  Dayalbagh Educational Institute 
+<b> Institute | <b>  Dayalbagh Educational Institute (Deemed Universty)
 <b> Email id|     <b>  dei.gunjan@yahoo.com
-<b> Department |  Mathematics
+<b> Department |  <b> Mathematics
 
 ### Contributors List
 
