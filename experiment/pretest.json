@@ -7,7 +7,7 @@
                 "a": "dy/dx+3x",
                 "b": "dy/dx+loge<sup>y</sup>",
                 "c": "dy/dx+cos(dy/dx)",
-                "d": "None"
+                "d": "x<sup>2</sup> + log y"
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
@@ -18,7 +18,7 @@
                 "a": "dy/dx=-cosecx.(tanx)",
                 "b": "dy/dx=2secx+3",
                 "c": "dy/dx=2secx.(tanx)",
-                "d": "None"
+                "d": "dy/dx = 2sec<sup>2</sup>x· tanx"
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
@@ -29,7 +29,7 @@
                 "a": "y=2",
                 "b": "y=x<sup>2</sup>+3x",
                 "c": "y=x<sup>2</sup>+3x+log(529)",
-                "d": "None"
+                "d": "y = x<sup>2</sup> + 2x"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
@@ -62,7 +62,7 @@
                 "a": "9x<sup>2</sup>+6x",
                 "b": "9x<sup>4</sup>+6x",
                 "c": "3x<sup>4</sup>+3x",
-                "d": "None of the above"
+                "d": "6x<sup>2</sup>+9x"
             },
             "correctAnswer": "b",
             "difficulty": "beginner"
