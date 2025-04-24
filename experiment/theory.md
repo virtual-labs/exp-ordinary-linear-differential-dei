@@ -6,7 +6,8 @@
 #### 2. Second order linear differential equation:
 The equation <br>
 y’’+Py’+Qy=f(x) 					…(i) <br>
-is a second order linear differential equation with constant coefficients, where P, Q&isin;R and f:R→R is a continuous function. If f(x)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients. <br>
+is a second order linear differential equation with constant coefficients, where P, Q&isin;R and f:R→R is a continuous function. If f(x)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients.
+It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems.<br>
 #### 3. Standard method of solution:
 In this section, we present the standard method to obtain the solution of equation (i). <br> 
 
