@@ -1,1 +1,1 @@
-It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems. The aim of this experiment is to understand and appreciate the mathematics behind the standard method of solution of these equations. This experiment is not focused on learning the standard method of solution.
+The aim of this experiment is to understand and appreciate the mathematics behind the standard method of solution of these equations. This experiment is not focused on learning the standard method of solution.
