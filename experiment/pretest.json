@@ -7,7 +7,7 @@
                 "a": "dy/dx+3x",
                 "b": "dy/dx+loge<sup>y</sup>",
                 "c": "dy/dx+cos(dy/dx)",
-                "d": "x<sup>2</sup> + log y"
+                "d": "x<sup>2</sup> + log y=0"
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
@@ -29,7 +29,7 @@
                 "a": "y=2",
                 "b": "y=x<sup>2</sup>+3x",
                 "c": "y=x<sup>2</sup>+3x+log(529)",
-                "d": "y = x<sup>2</sup> + 2x"
+                "d": "y = x<sup>2</sup> +e<sup>2</sup>"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"

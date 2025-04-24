@@ -7,7 +7,7 @@
         "a": "2+9e<sup>3x</sup>-2 ",
         "b": "2x+3e<sup>3x</sup>-2y ",
         "c": "2+3e<sup>3x</sup>-2",
-        "d": "None of the above"
+        "d": "2x+3e<sup>3x</sup>-2y=0"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -40,7 +40,7 @@
         "a": "y<sub>0</sub>+kerT",
         "b": "y<sub>0</sub>",
         "c": "kerT",
-        "d": "none of the above"
+        "d": "y<sup>2</sup>"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
