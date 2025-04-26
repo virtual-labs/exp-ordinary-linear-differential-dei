@@ -18,10 +18,14 @@ A specific function g(x) which satisfies equation (i) is called particular integ
 In particular, if f(x)=0, then complementary function gives all solutions of equation (i), so that C.I.=C.F, that is its solution is given by y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>, where  c<sub>1</sub>, c<sub>2</sub> are constants and  m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation am<sup>2</sup> +bm+c=0 <br>
 
 **Note.** There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. 
-#### 4. Examples:
+#### 4. Examples and explanation matrix:
+##### 4.1. Examples:
 (i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D<sup>2</sup>(y), which implies that (D<sup>2</sup>-I)y=0. Clearly auxiliary equation is m<sup>2</sup>-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c<sub>1</sub>, c<sub>2</sub> are constants.
 
 (ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C<sub>1</sub>e<sup>x</sup>+C<sub>2</sub>e<sup>-x</sup> -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
+##### 4.2 Summary:
+Examples given in Section 4.1 are summarized in explanation matrix given below.
+![Summary](images/exp10imageaddition.PNG "Summary")
 #### 5. Understanding:
 ##### 5.1. Collection of differentiable functions as a vector space:
 Collection of differentiable functions E from R to R is a vector space over R with addition and scalar multiplication of functions.
@@ -40,7 +44,7 @@ Let y’’-5y’+6y=2e<sup>x</sup> be the given differential equation. <br>
 **Standard method for solution:** <br>
 (a) The auxiliary equation is m<sup>2</sup>-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, wherec<sub>1</sub>, c<sub>2</sub> are constants. <br>
 (b) Clearly y=e<sup>x</sup> satisfies the given differential equation. Thus e<sup>x</sup> is a particular integral. <br>
-(c) Thus complete integral y(xc<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
+(c) Thus complete integral y(x)=c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
 **Verification:**  <br>
 Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2e<sup>x</sup> which is the R.H.S. of the given differential equation. <br>
 **Understanding of complete integral:**  <br>
