@@ -44,7 +44,7 @@ Let y’’-5y’+6y=2e<sup>x</sup> be the given differential equation. <br>
 **Standard method for solution:** <br>
 (a) The auxiliary equation is m<sup>2</sup>-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, wherec<sub>1</sub>, c<sub>2</sub> are constants. <br>
 (b) Clearly y=e<sup>x</sup> satisfies the given differential equation. Thus e<sup>x</sup> is a particular integral. <br>
-(c) Thus complete integral y(xc<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
+(c) Thus complete integral y(x)=c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
 **Verification:**  <br>
 Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2e<sup>x</sup> which is the R.H.S. of the given differential equation. <br>
 **Understanding of complete integral:**  <br>
