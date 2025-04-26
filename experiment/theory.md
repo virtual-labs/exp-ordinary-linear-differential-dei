@@ -25,6 +25,7 @@ In particular, if f(x)=0, then complementary function gives all solutions of equ
 (ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C<sub>1</sub>e<sup>x</sup>+C<sub>2</sub>e<sup>-x</sup> -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
 ##### 4.2 Summary:
 The following is the explanation matrix of the examples given in Section 4.1.
+![Summary](images/exp10imageaddition.PNG "Summary")
 #### 5. Understanding:
 ##### 5.1. Collection of differentiable functions as a vector space:
 Collection of differentiable functions E from R to R is a vector space over R with addition and scalar multiplication of functions.
