@@ -51,12 +51,12 @@
             <label for="capacitance">C (Capacitance in F): <span class="value-display" id="capacitance-value">0.001</span></label>
             <input type="range" id="capacitance" value="0.001" min="0" max="0.01" step="0.0001">
 <br>
-            <input class="submitbtn" type="submit" onclick="updateEquation()">
+            
         </div>
 
         <canvas id="rlcCircuit" width="600" height="400" style="border: 1px solid black;"></canvas>
 
-
+         <input class="submitbtn" type="submit" onclick="updateEquation()">
         <p class="head1" id="head1" style="display: none;"><strong>Mathematical Formulation</strong></p>
         <p id="auxEq2" style="display: none;">Charge Q is given by:</p>
         <p id="auxEq" style="display: none; font-size: 21px;"></p>
