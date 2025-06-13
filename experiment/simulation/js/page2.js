@@ -49,13 +49,13 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
     const ci = document.getElementById('CI');
     
     if (isPerfectSquare(discriminant)) {
-        resultElement.innerHTML = "<b id='head3'>Complementary Function (CF):</b><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+complementaryFunction+" <br> <p style='text-align: center;'>where c<sub>1</sub>, c<sub>2</sub> are constants</p>"; // Use innerHTML for MathJax
+        resultElement.innerHTML = "<b id='head3'>Complementary Function (CF):</b><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+complementaryFunction+" <br> <p style='text-align: center;'>where c<sub>1</sub> and c<sub>2</sub> are constants</p>"; // Use innerHTML for MathJax
          // Ask MathJax to re-process the content
          MathJax.typesetPromise([resultElement]).catch(err => console.error(err));
          auxEq.innerHTML = auxiliaryEquation;
          roots.innerHTML = "<b id='head3'>Roots:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; r<sub>1</sub> = "+root1+"; r<sub>2</sub> = "+root2+" ";
         //  pi.innerHTML = "<b id='head3'>Particular Integral (PI) by Hit and Try:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; PI = 0";
-        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where c<sub>1</sub>, c<sub>2</sub> are constants</p>";
+        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where c<sub>1</sub> and c<sub>2</sub> are constants</p>";
         MathJax.typesetPromise([ci]).catch(err => console.error(err));
         document.getElementById('head1').style.display ='block';
         document.getElementById('roots').style.display ='block';
