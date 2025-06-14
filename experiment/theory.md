@@ -3,6 +3,8 @@
 (ii.) F: function from R to R <br>
 (iii.) D: d/dx <br>
 (iv.) D<sup>2</sup>: d/dx(d/dx) i.e. d<sup>2</sup>/dx<sup>2</sup> 
+
+This experiment is not focused on learning the standard method of solution.
 #### 2. Second order linear differential equation:
 The equation <br>
 y’’+Py’+Qy=f(x) 					…(i) <br>
