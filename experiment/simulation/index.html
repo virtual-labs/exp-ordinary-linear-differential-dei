@@ -7,34 +7,174 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    
+     <script defer src="js/main.js"></script> 
+     <style>
+      select{
+        font-size: .9rem;
+      }
+      button{
+        
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+        cursor: pointer;
+    }
+      
+     </style>
 </head>
 <body>
     <h2 class="pagehead">Ordinary Linear Differential Equations</h2>
 
 <div class="container">
-    <button class="subbtn" id="solbtn" >Linear Differential Equation with Constant Co-efficients</button><br><br>
+    <button class="subbtn" id="solbtn" >Linear Differential Equation with <br> Constant Co-efficients</button><br><br>
 
-    <p class="p1">\(a \frac{d^2y}{dx^2} + b \frac{dy}{dx} + c = f(x) \) &emsp;................... (i) <br> where a, b, c &isin; R and <i><b>f</b></i>:R &rarr; R </sup> is continuous</p>
-    <button class="subbtn" id="solbtn" >Explaining Vocabulary</button><br><br>
+    <p class="p11">\(a \frac{d^2y}{dx^2} + b \frac{dy}{dx} + c = f(x) \) &emsp;................... (i) </p><p style=" padding-left: 3rem;">(<i>a, b, c </i>&isin; R and <i><b>f</b></i>:R &rarr; R </sup> is continuous)</p>
+    <button class="subbtn" id="solbtn" >Vocabulary</button><br><br>
+<ul><li>
+    <p class="p1"> <strong style="font-size: 1.4rem;">Solution: </strong>
+        <select id="q1">
+        <option value="sel">--Select--</option>
+        <option value="a">Any set</option>
+        <option value="b">Any polynomial</option>
+        <option value="c">Any function</option>
+      </select> which satisfies Equation (i) is called solution.</sup> 
+      <button onclick="ques1()">Submit</button>
+    </p>
+      <p id="result1"></p>
+    </li>
+    <li>
+    <p class="p1"> <strong style="font-size: 1.4rem;">Complementary Function (CF):  </strong>        <select id="q2">
+        <option value="sel">--Select--</option>
+        <option value="a">All the solutions</option>
+        <option value="b">All the Co-efficients</option>
+        <option value="c">Right Hand Side</option>
+      </select> of the homogeneous equation \(a \frac{d^2y}{dx^2} + b \frac{dy}{dx} + c = 0 \) are collectively called CF.
+       <button onclick="ques2()">Submit</button></p>
+      <p id="result2"></p>
+      </li>
+      <li>
+    <p class="p1"> <strong style="font-size: 1.4rem;">Particular Integral (PI): </strong>
+        <select id="q3">
+        <option value="sel">--Select--</option>
+        <option value="a">A specific solution</option>
+        <option value="b"> A polynomial </option>
+        <option value="c">A set</option>
+      </select> that satisfies Equation (i) is called PI.
+      <button onclick="ques3()">Submit</button></p>
+      <p id="result3"></p>
+      </li>
+      <li>
+    <p class="p1"> <strong style="font-size: 1.4rem; padding: 0%; margin: 0%;">Complete Integral (CI) of Differential Equation (i): </strong></p></li>
+       <ul><li>CI = <select id="q4">
+        <option value="sel">--Select--</option>
+        <option value="a">CF</option>
+        <option value="b">PI</option>
+        <option value="c">CF + PI</option>
+      </select> <button onclick="ques4()">Submit</button></p>
+       <p id="result4"></p>
+       </li>
+       
 
-    <p class="p1"> <strong style="font-size: 1.4rem;">Solution: </strong>A function which satisfies the given equation</sup></i></p>
-    <p class="p1"> <strong style="font-size: 1.4rem;">Complementary Function (CF):  </strong>All the solutions of homogeneous equation \(a \frac{d^2y}{dx^2} + b \frac{dy}{dx} + c = 0 \) &emsp;.......... (ii)</p>
-    <p class="p1"> <strong style="font-size: 1.4rem;">Particular Integral (PI): </strong>A specific solution that satisfies eq. (ii) </p>
-    <p class="p1"> <strong style="font-size: 1.4rem; padding: 0%; margin: 0%;">Complete Integral (CI) of (i): </strong> <br><span class="s_lst2"> &#9679;</span> Provides all solutions of eq. (i) <br><span class="s_lst2">&#9679; </span>CI  = CF + PI</p>
-    <p class="p1"> <strong style="font-size: 1.4rem; padding: 0%; margin: 0%;">Special Case: f(x)=0 </strong> <br><span class="s_lst2"> &#9679;</span> CF provides all solutions of eq. (i), so that CI = CF</p>
-    
+     <li><select id="q4_2">
+        <option value="">--Select--</option>
+        <option value="a">A specific solution is</option>
+        <option value="b">Partial solution is</option>
+        <option value="c">All solutions are</option>
+      
+      </select> represented by CI. <button onclick="ques4_2()">Submit</button><br>
+     <p id="result4_2"></p></li>
+      </ul>
+
+      <li>
+    <p class="p1"> <strong style="font-size: 1.4rem;">General solution: </strong>
+        An expression that represents <select id="q4_1">
+        <option value="sel">--Select--</option>
+        <option value="a">all solutions</option>
+        <option value="b">partial solution</option>
+        <option value="c">specific solution</option>
+      </select> is known as general solution.
+      <button onclick="ques4_1()">Submit</button>
+    </p>
+      <p id="result4_1"></p>
+    </li>
+       <li>
+    <p class="p1"> <strong style="font-size: 1.4rem; padding: 0%; margin: 0%;">Special Case f(x)=0: </strong></p>
+    <ul><li> CI =
+        <select id="q5">
+        <option value="">--Select--</option>
+        <option value="a">CF</option>
+        <option value="b">PI</option>
+      
+      </select> <button onclick="ques5()">Submit</button></p></li>
+      <p id="result5"></p>
+
+      <li>
+        <select id="q5_1">
+        <option value="">--Select--</option>
+        <option value="a">CF</option>
+        <option value="b">PI</option>
+        
+      </select> provides all solutions of Equation (i). <button onclick="ques5_1()">Submit</button></p></li>
+      <p id="result5_1"></p>
+    </ul>
+     </li>
+    </ul>
     <button class="subbtn" id="solbtn" >Understanding</button><br><br>
-    
     <ul class="p1">
-        <li>Notation: T &equiv; \(a  D^2+ b D + cI  \) </li>
-        <li>Linear map equation corresponding to (i): T(y)=f(x) &emsp; ........... (iii) </li>
-        <li>Solution of (iii): ker T + y<sub>o</sub>, where T(y<sub>o</sub>) = f(x)</li>
-        <li>Connection of (iii) with Linear Differential Equation (i):
+        <li>Notation: T &equiv; \(a  D^2+ b D + c1  \), where D is the standard \( \frac{d}{dx} \) operator and 1 is the standard constant operator "one".</li>
+        <br>
+        <li>T(y)=f(x) is the linear map equation corresponding to the equation <select id="unst_1">
+        <option value="">--Select--</option>
+        <option value="a">dy/dx = f(x) </option>
+        <option value="b">d&#178;y/dx&#178; = f(x)</option>
+        <option value="c">given by (i)</option>
+        
+      </select>.  <button onclick="unst_1()">Submit</button> </li>
+      <p id="resunst_1"></p>
+        <li>Solution of T(y)=f(x) is ker T + y<sub>o</sub>, where <select id="unst_2">
+        <option value="">--Select--</option>
+        <option value="a">T(y₀) = f(x)</option>
+        <option value="b">y₀ = f(x)</option>
+        <option value="c">Dy₀ = f(x)</option>
+        
+      </select>. <button onclick="unst_2()">Submit</button></li>
+      <p id="resunst_2"></p>
+        <li>Connection between T(y)=f(x) and Equation (i): 
+          <br>
+          <br>
             <ul>
-                <li>Complementary Function (CF) for eq. (i) corresponds to ker T</li>
-                <li>Particular Integral (PI) for eq. (i) corresponds to y<sub>o</sub></li>
-                <li>Solution of linear map equation is same as complete integral of linear differential equation </li>
+                <li>Complementary Function (CF) for Equation (i) corresponds to <select id="unst_3">
+        <option value="">--Select--</option>
+        <option value="a">ker T + y₀</option>
+        <option value="b">ker T</option>
+         <option value="c">y₀</option>
+        
+      </select>. <button onclick="unst_3()">Submit</button></li>
+      <p id="resunst_3"></p>
+
+        <li>Particular Integral (PI) for Equation (i) corresponds to <select id="unst_4">
+        <option value="">--Select--</option>
+        <option value="a">ker T + y₀</option>
+        <option value="b">y₀</option>
+        <option value="c">ker T</option>
+        
+        
+      </select>. <button onclick="unst_4()">Submit</button></li>
+      <p id="resunst_4"></p>
+
+        <li>Solution of linear map equation T(y)=f(x) is same as <select id="unst_5">
+        <option value="">--Select--</option>
+        <option value="a">complete integral</option>
+        <option value="b">particular integral</option>
+        <option value="c">complementary Function</option>
+        
+      </select>  of Equation (i). <button onclick="unst_5()">Submit</button> </li>
+      <p id="resunst_5"></p>
             </ul>
         </li> 
        
