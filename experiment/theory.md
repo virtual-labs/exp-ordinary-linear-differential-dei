@@ -1,44 +1,45 @@
+It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems. This experiment will help in building a clear understanding of the mathematical ideas behind the standard method of finding solutions of these equations.
 #### 1. Notation:
-(i.) E: collection of differentiable function <br>
-(ii.) F: function from R to R <br>
-(iii.) D: d/dx <br>
-(iv.) D<sup>2</sup>: d/dx(d/dx) i.e. d<sup>2</sup>/dx<sup>2</sup> 
+(i.) <i>E</i>: collection of differentiable function <br>
+(ii.) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
+(iii.) <i>D</i>: <i>d</i>/<i>dx</i> <br>
+(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>) i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 
 This experiment is not focused on learning the standard method of solution.
 #### 2. Second order linear differential equation:
 The equation <br>
-y’’+Py’+Qy=f(x) 					…(i) <br>
-is a second order linear differential equation with constant coefficients, where P, Q&isin;R and f:R→R is a continuous function. If f(x)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients.
+<i>y</i>’’+<i>Py</i>’+<i>Qy</i>=<i>f</i>(<i>x</i>) 					…(i) <br>
+is a second order linear differential equation with constant coefficients, where <i>P, Q</i>&isin;<i>R</i> and <i>f</i>:<i>R</i>→<i>R</i> is a continuous function. If <i>f</i>(<i>x</i>)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients.
 It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems.<br>
 #### 3. Standard method of solution:
 In this section, we present the standard method to obtain the solution of equation (i). <br> 
 
-Consider the equation am<sup>2</sup>+bm+c=0, which is called the auxiliary equation. Then y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants and m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by y<sub>c</sub>. <br>
+Consider the equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0, which is called the auxiliary equation. Then <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by <i>y</i><sub><i>c</i></sub>. <br>
 
-A specific function g(x) which satisfies equation (i) is called particular integral (P.I.) and is denoted by y<sub>p</sub>. Any solution of equation (i) is of the form y(x)≡y<sub>c</sub>+y<sub>p</sub>=c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>+g(x). This is called the complete integral (C.I.). <br>
+A specific function <i>g</i>(<i>x</i>) which satisfies equation (<i>i</i>) is called particular integral (P.I.) and is denoted by <i>y</i><sub><i>p</i></sub>. Any solution of equation (<i>i</i>) is of the form <i>y</i>(<i>x</i>)≡<i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>=<i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>+<i>g</i>(<i>x</i>). This is called the complete integral (C.I.). <br>
 
-In particular, if f(x)=0, then complementary function gives all solutions of equation (i), so that C.I.=C.F, that is its solution is given by y(x) = c<sub>1</sub>e<sup>m</sup><sub>1</sub><sup>x</sup>+c<sub>2</sub>e<sup>m</sup><sub>2</sub><sup>x</sup>, where  c<sub>1</sub>, c<sub>2</sub> are constants and  m<sub>1</sub>, m<sub>2</sub> are the roots of the auxiliary equation am<sup>2</sup> +bm+c=0 <br>
+In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all solutions of equation (<i>i</i>), so that C.I.=C.F, that is its solution is given by <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where  <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and  <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0 <br>
 
 **Note.** There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. 
 #### 4. Examples and explanation matrix:
 ##### 4.1. Examples:
-(i.) Let y’’-y=0 be a homogeneous second order linear differential equation. Then y’’=D<sup>2</sup>(y), which implies that (D<sup>2</sup>-I)y=0. Clearly auxiliary equation is m<sup>2</sup>-1=0, thus m=1, -1. Then the complementary function and hence the complete integral of this equation is c1ex+c2e-x, where c<sub>1</sub>, c<sub>2</sub> are constants.
+(i.) Let <i>y</i>’’-<i>y</i>=0 be a homogeneous second order linear differential equation. Then <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>), which implies that (<i>D</i><sup>2</sup>-<i>I</i>)<i>y</i>=0. Clearly auxiliary equation is <i>m</i><sup>2</sup>-1=0, thus <i>m</i>=1, -1. Then the complementary function and hence the complete integral of this equation is <i>c</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.
 
-(ii.) Let y’’-y=2sinx be the second order linear differential equation. Let y’’=D2(y). Then (D2-1)y=2sinx, y=-sinx satisfies this equation. It can be seen that -sinx is a particular integral of this equation. Thus complete integral is C<sub>1</sub>e<sup>x</sup>+C<sub>2</sub>e<sup>-x</sup> -sinx, where c<sub>1</sub>, c<sub>2</sub> are constants.
+(ii.) Let <i>y</i>’’-<i>y</i>=2sin<i>x</i> be the second order linear differential equation. Let <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>). Then (<i>D</i><sup>2</sup>-1)<i>y</i>=2sin<i>x</i>, <i>y</i>=-sin<i>x</i> satisfies this equation. It can be seen that -sin<i>x</i> is a particular integral of this equation. Thus complete integral is <i>C</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>C</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup> -sin<i>x</i>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.
 ##### 4.2 Summary:
 Examples given in Section 4.1 are summarized in explanation matrix given below.
 ![Summary](images/exp10imageaddition.PNG "Summary")
 #### 5. Understanding:
 ##### 5.1. Collection of differentiable functions as a vector space:
-Collection of differentiable functions E from R to R is a vector space over R with addition and scalar multiplication of functions.
+Collection of differentiable functions <i>E</i> from <i>R</i> to <i>R</i> is a vector space over <i>R</i> with addition and scalar multiplication of functions.
 ##### 5.2. Derivative as an operator:
-Notion of derivative is well known. It operates on functions. Thus d/dx is a function from the collection of differentiable functions to collection of functions. It is denoted by D and is called differential operator.
+Notion of derivative is well known. It operates on functions. Thus <i>d</i>/<i>dx</i> is a function from the collection of differentiable functions to collection of functions. It is denoted by <i>D</i> and is called differential operator.
 ##### 5.3. Operator defined by differential equation:
-Let y’’+py’+qy=f(x), where p, q&isin;R be a given linear differential equation of second order. Then (D<sup>2</sup>+pD+qI)(y)=r, where D<sup>2</sup>(y)= y’’, D(y)=y’ and I is the identity operator. Thus the L.H.S. of the given equation provides the operator D<sup>2</sup>+pD+qI which is called the operator defined by the given differential equation.
+Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then (<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i>)(<i>y</i>)=<i>r</i>, where <i>D</i><sup>2</sup>(<i>y</i>)= <i>y</i>’’, <i>D</i>(<i>y</i>)=<i>y</i>’ and <i>I</i> is the identity operator. Thus the L.H.S. of the given equation provides the operator <i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i> which is called the operator defined by the given differential equation.
 ##### 5.4. Linear map equation defined by a given differential equation:
-Let y’’+py’+qy=f(x), where p, q&isin;R be a given linear differential equation of second order. Then this can be written as T(y)=r, where T:F→F is the operator as defined in Section 5.3 so that T=D<sup>2</sup>+pD+qI. This is the desired linear map equation T(y)=r given by the differential equation.
+Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then this can be written as <i>T</i>(<i>y</i>)=<i>r</i>, where <i>T</i>:<i>F</i>→<i>F</i> is the operator as defined in Section 5.3 so that <i>T</i>=<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i>. This is the desired linear map equation <i>T</i>(<i>y</i>)=<i>r</i> given by the differential equation.
 ##### 5.5. Solution of differential equation:
-Recall that solution set of a linear map T(y)=r, as described in Section 5.4, is y<sub>o</sub>+kerT, where y<sub>o</sub> is its particular solution and kerT is the collection of all solutions of T(y)=0. Notice that linear map equation is just another form of the given differential equation. Therefore its solutions are also the solution of given differential equation.
+Recall that solution set of a linear map <i>T</i>(<i>y</i>)=<i>r</i>, as described in Section 5.4, is y<sub>o</sub>+kerT, where y<sub>o</sub> is its particular solution and kerT is the collection of all solutions of T(y)=0. Notice that linear map equation is just another form of the given differential equation. Therefore its solutions are also the solution of given differential equation.
 
 As given in Section 3, a solution of linear differential equation is given by y<sub>c</sub>+y<sub>p</sub>, where y<sub>c</sub> is a solution of the homogenous counterpart of the given differential equation and y<sub>c</sub> is a particular solution of the given differential equation. Here it may be noted that y<sub>p</sub> corresponds to y<sub>o</sub> and y<sub>c</sub> corresponds to an element of kerT.
 ##### 5.6. Example: 
