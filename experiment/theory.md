@@ -45,20 +45,20 @@ As given in Section 3, a solution of linear differential equation is given by <i
 ##### 5.6. Example: 
 Let <i>y</i>’’-5<i>y</i>’+6<i>y</i>=2<i>e</i><sup><i>x</i></sup> be the given differential equation. <br>
 **Standard method for solution:** <br>
-(a) The auxiliary equation is m<sup>2</sup>-5m+6=0, i.e. (m-2)(m-3)=0. Thus m=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, wherec<sub>1</sub>, c<sub>2</sub> are constants. <br>
-(b) Clearly y=e<sup>x</sup> satisfies the given differential equation. Thus e<sup>x</sup> is a particular integral. <br>
-(c) Thus complete integral y(x)=c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>+e<sup>x</sup>, where c<sub>1</sub>, c<sub>2</sub> are constants. <br>
+(a) The auxiliary equation is <i>m</i><sup>2</sup>-5<i>m</i>+6=0, i.e. (<i>m</i>-2)(<i>m</i>-3)=0. Thus <i>m</i>=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, where<i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. <br>
+(b) Clearly <i>y</i>=<i>e</i><sup><i>x</i></sup> satisfies the given differential equation. Thus <i>e</i><sup><i>x</i></sup> is a particular integral. <br>
+(c) Thus complete integral <i>y</i>(<i>x</i>)=<i>c</i><sub>1</sub><i>e</i><sup>3<i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>2<i>x</i></sup>+<i>e</i><sup><i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. <br>
 **Verification:**  <br>
-Substituting the value of y(x) obtained above, in the given differential equation, it comes out to be equal to 2e<sup>x</sup> which is the R.H.S. of the given differential equation. <br>
+Substituting the value of <i>y</i>(<i>x</i>) obtained above, in the given differential equation, it comes out to be equal to 2<i>e</i><sup><i>x</i></sup> which is the R.H.S. of the given differential equation. <br>
 **Understanding of complete integral:**  <br>
 This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. <br>
-The linear map arising out of the given differential equation is T≡D2-5D+6I and the linear map equation is T(y)=2ex. The solution set of linear map equation is the solution set of the given differential equation. <br>
+The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is T(y)=2ex. The solution set of linear map equation is the solution set of the given differential equation. <br>
 #### 6. Example (Engineering problem): <br>
-In an RLC circuit, at t=0, a current of 2 ampere flows with resistance R=40 ohm, inductance L=2/5 henry, and capacitance C=10<sup>−2</sup> farad. The current I≡dQ/dt is to be determined, where Q is the charge flowing in the circuit at t>0 if Q(0)=1, Q′(0)=2. It is assumed here that voltage E(t)=0, for t>0. <br>
+In an RLC circuit, at <i>t</i>=0, a current of 2 ampere flows with resistance <i>R</i>=40 ohm, inductance <i>L</i>=2/5 henry, and capacitance <i>C</i>=10<sup>−2</sup> farad. The current <i>I</i>≡<i>dQ</i>/<i>dt</i> is to be determined, where <i>Q</i> is the charge flowing in the circuit at <i>t</i>>0 if <i>Q</i>(0)=1, <i>Q′</i>(0)=2. It is assumed here that voltage <i>E</i>(<i>t</i>)=0, for <i>t</i>>0. <br>
 
-The given problem is mathematically represented by an initial value problem: the differential equation for the charge Q across the circuit using Kirchhoff’s law is 2/5Q′′+40Q′+100Q=E(t) and the initial condition are Q(0)=1, Q′(0)=2. To find its solution and the required current, we proceed as follows.  <br>
-The given differential equation reduces to 2Q′′+200Q′+500Q=0. The auxiliary equation of the given differential equation is 2m<sup>2</sup>+200m+500=0. Thus m=130 or 70. Therefore the complete integral of the given differential equation is     <br>                                                 
-                      Q=c<sub>1</sub>e<sup>130t</sup>+c<sub>2</sub>e<sup>70t</sup>,                      …(i) <br>
-where c<sub>1</sub>, c<sub>2</sub> are constants. Now differentiating equation (i) yields  <br>
-                           Q′=130c<sub>1</sub>e<sup>130t</sup>+70c<sub>2</sub>e<sup>70t</sup>,           … (ii)  <br>
-Using given initial conditions, we obtain c<sub>1</sub>+c<sub>2</sub>=Q(0)=1 and 130c<sub>1</sub>+70c<sub>2</sub>=Q′(0)=2. Therefore c<sub>2</sub>=128/60 and c<sub>1</sub>+=-68/60. Thus Q=128/60e<sup>130t</sup>-68/60e<sup>70t</sup>. Required current I≡dQ/dt=130.(128/60)e<sup>130t</sup>+70.(-68/60)e<sup>70t</sup>.
+The given problem is mathematically represented by an initial value problem: the differential equation for the charge <i>Q</i> across the circuit using Kirchhoff’s law is 2/5<i>Q′′</i>+40<i>Q′</i>+100<i>Q</i>=<i>E</i>(<i>t</i>) and the initial condition are <i>Q</i>(0)=1, <i>Q′</i>(0)=2. To find its solution and the required current, we proceed as follows.  <br>
+The given differential equation reduces to 2<i>Q′′</i>+200<i>Q′</i>+500<i>Q</i>=0. The auxiliary equation of the given differential equation is 2<i>m</i><sup>2</sup>+200<i>m</i>+500=0. Thus <i>m</i>=130 or 70. Therefore the complete integral of the given differential equation is     <br>                                                 
+                      <i>Q</i>=<i>c</i><sub>1</sub><i>e</i><sup>130<i>t</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>70<i>t</i></sup>,                      …(<i>i</i>) <br>
+where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. Now differentiating equation (<i>i</i>) yields  <br>
+                           <i>Q′</i>=130<i>c</i><sub>1</sub><i>e</i><sup>130<i>t</i></sup>+70<i>c</i><sub>2</sub><i>e</i><sup>70<i>t</i></sup>,           … (<i>ii</i>)  <br>
+Using given initial conditions, we obtain <i>c</i><sub>1</sub>+<i>c</i><sub>2</sub>=<i>Q</i>(0)=1 and 130<i>c</i><sub>1</sub>+70<i>c</i><sub>2</sub>=<i>Q′</i>(0)=2. Therefore <i>c</i><sub>2</sub>=128/60 and <i>c</i><sub>1</sub>=-68/60. Thus <i>Q</i>=128/60<i>e</i><sup>130<i>t</i></sup>-68/60<i>e</i><sup>70<i>t</i></sup>. Required current <i>I</i>≡<i>dQ</i>/<i>dt</i>=130.(128/60)<i>e</i><sup>130<i>t</i></sup>+70.(-68/60)<i>e</i><sup>70t</sup>.
