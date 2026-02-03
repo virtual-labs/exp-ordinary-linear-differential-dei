@@ -1,1 +1,1 @@
-The aim of this experiment is to understand the mathematical principles behind the standard methods used to solve linear ordinary differential equations with constant coefficients, which frequently arise in engineering applications.
+<span style="font-family: 'Times New Roman'; font-size: 22px;">The aim of this experiment is to understand the mathematical principles behind the standard methods used to solve linear ordinary differential equations with constant coefficients, which frequently arise in engineering applications.</span>
