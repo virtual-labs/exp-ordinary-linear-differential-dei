@@ -19,7 +19,7 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
             a = 1;
         }
 
-    const auxiliaryEquation = "<b id='head3'>Auxiliary Equation:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+a+"r² + "+b+"r + "+c+" = 0";
+    const auxiliaryEquation = "<b id='head3'>Auxiliary Equation:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+a+"<i>r</i>² + "+b+"<i>r</i> + "+c+" = 0";
      
         // Solve the quadratic equation: r = (-b ± √(b² - 4ac)) / 2a
         const discriminant = b * b - 4 * a * c;
@@ -49,13 +49,13 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
     const ci = document.getElementById('CI');
     
     if (isPerfectSquare(discriminant)) {
-        resultElement.innerHTML = "<b id='head3'>Complementary Function (CF):</b><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+complementaryFunction+" <br> <p style='text-align: center;'>where c<sub>1</sub> and c<sub>2</sub> are constants</p>"; // Use innerHTML for MathJax
+        resultElement.innerHTML = "<b id='head3'>Complementary Function (CF):</b><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+complementaryFunction+" <br> <p style='text-align: center;'>where <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> are constants</p>"; // Use innerHTML for MathJax
          // Ask MathJax to re-process the content
          MathJax.typesetPromise([resultElement]).catch(err => console.error(err));
          auxEq.innerHTML = auxiliaryEquation;
-         roots.innerHTML = "<b id='head3'>Roots:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; r<sub>1</sub> = "+root1+"; r<sub>2</sub> = "+root2+" ";
+         roots.innerHTML = "<b id='head3'>Roots:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i>r</i><sub>1</sub> = "+root1+"; <i>r</i><sub>2</sub> = "+root2+" ";
         //  pi.innerHTML = "<b id='head3'>Particular Integral (PI) by Hit and Try:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; PI = 0";
-        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where c<sub>1</sub> and c<sub>2</sub> are constants</p>";
+        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> are constants</p>";
         MathJax.typesetPromise([ci]).catch(err => console.error(err));
         document.getElementById('head1').style.display ='block';
         document.getElementById('roots').style.display ='block';
@@ -65,7 +65,7 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
         resultElement.style.color = 'black';
        
     } else {
-        resultElement.textContent = `The discriminant (b² - 4ac) is ${discriminant}, and it is not a perfect square.`;
+        resultElement.innerHTML = `The discriminant (<i>b</i>² - 4<i>ac</i>) is ${discriminant}, and it is not a perfect square.`;
         resultElement.style.color = 'red';
         document.getElementById('head1').style.display ='none';
         document.getElementById('roots').style.display ='none';
