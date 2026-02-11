@@ -1,4 +1,4 @@
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Ordinary linear differential equations with constant coefficients are extensively used in solving engineering problems. This experiment will help in building a clear understanding of the mathematical ideas behind the standard method of finding solutions of these equations.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Ordinary linear differential equations with constant coefficients are extensively used in solving engineering problems. This experiment helps in building a clear understanding of the mathematical concept used in the standard method of finding solutions of these equations.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Notation:</span>**
 
