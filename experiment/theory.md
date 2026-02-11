@@ -25,7 +25,7 @@ A specific function <i>g</i>(<i>x</i>) which satisfies equation (<i>i</i>) is ca
 In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all solutions of equation (<i>i</i>), so that C.I.=C.F, that is its solution is given by <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where  <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and  <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0 <br><br>
 <b>Note.</b> There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. </span>
 
-**<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Examples and explanation matrix:</span>**
+**<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Examples and explanation matrix:</span>**<br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4.1. Examples:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i.) Let <i>y</i>’’-<i>y</i>=0 be a homogeneous second order linear differential equation. Then <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>), which implies that (<i>D</i><sup>2</sup>-<i>I</i>)<i>y</i>=0. Clearly auxiliary equation is <i>m</i><sup>2</sup>-1=0, thus <i>m</i>=1, -1. Then the complementary function and hence the complete integral of this equation is <i>c</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.
