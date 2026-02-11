@@ -165,7 +165,7 @@ function unst_1(){
     result.style.color = "blue";
   }
 else{
-  if (selected === "d") {
+  if (selected === "c") {
     result.innerHTML = "<span style='color:black;'>Answer:</span>✅ Correct!";
     result.style.color = "green";
    
@@ -189,7 +189,7 @@ else{
     result.style.color = "green";
    
   } else {
-    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: T(y₀) = f(x) ";
+    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: <i>T</i>(<i>y₀</i>) = <i>f</i>(<i>x</i>) ";
     result.style.color = "red";
     
   }}
@@ -208,7 +208,7 @@ else{
     result.style.color = "green";
    
   } else {
-    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: ker T ";
+    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: ker 𝑇 ";
     result.style.color = "red";
     
   }}
@@ -227,7 +227,7 @@ else{
     result.style.color = "green";
    
   } else {
-    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: y₀ ";
+    result.innerHTML = "<span style='color:black;'>Answer:</span>❌ Incorrect! Correct Answer: <i>y₀</i> ";
     result.style.color = "red";
     
   }}

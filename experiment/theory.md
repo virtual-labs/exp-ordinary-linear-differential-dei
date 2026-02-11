@@ -1,11 +1,11 @@
-<span style="font-family: 'Times New Roman'; font-size: 22px;">It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems. This experiment will help in building a clear understanding of the mathematical ideas behind the standard method of finding solutions of these equations.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Ordinary linear differential equations with constant coefficients are extensively used in solving engineering problems. This experiment helps in building a clear understanding of the mathematical concepts used in the standard method for finding solutions of these equations.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Notation:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i.) <i>E</i>: collection of differentiable function <br>
 (ii.) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
 (iii.) <i>D</i>: <i>d</i>/<i>dx</i> <br>
-(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>) i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
+(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 <br>
 This experiment is not focused on learning the standard method of solution.</span>
 
@@ -81,4 +81,4 @@ The given differential equation reduces to 2<i>Q′′</i>+200<i>Q′</i>+500<i>
                       <i>Q</i>=<i>c</i><sub>1</sub><i>e</i><sup>130<i>t</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>70<i>t</i></sup>,                      …(<i>i</i>) <br>
 where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. Now differentiating equation (<i>i</i>) yields  <br>
                            <i>Q′</i>=130<i>c</i><sub>1</sub><i>e</i><sup>130<i>t</i></sup>+70<i>c</i><sub>2</sub><i>e</i><sup>70<i>t</i></sup>,           … (<i>ii</i>)  <br>
-Using given initial conditions, we obtain <i>c</i><sub>1</sub>+<i>c</i><sub>2</sub>=<i>Q</i>(0)=1 and 130<i>c</i><sub>1</sub>+70<i>c</i><sub>2</sub>=<i>Q′</i>(0)=2. Therefore <i>c</i><sub>2</sub>=128/60 and <i>c</i><sub>1</sub>=-68/60. Thus <i>Q</i>=128/60<i>e</i><sup>130<i>t</i></sup>-68/60<i>e</i><sup>70<i>t</i></sup>. Required current <i>I</i>≡<i>dQ</i>/<i>dt</i>=130.(128/60)<i>e</i><sup>130<i>t</i></sup>+70.(-68/60)<i>e</i><sup>70t</sup>.</span>
+Using given initial conditions, we obtain <i>c</i><sub>1</sub>+<i>c</i><sub>2</sub>=<i>Q</i>(0)=1 and 130<i>c</i><sub>1</sub>+70<i>c</i><sub>2</sub>=<i>Q′</i>(0)=2. Therefore <i>c</i><sub>2</sub>=128/60 and <i>c</i><sub>1</sub>=-68/60. Thus <i>Q</i>=128/60<i>e</i><sup>130<i>t</i></sup>-68/60<i>e</i><sup>70<i>t</i></sup>. Required current <i>I</i>≡<i>dQ</i>/<i>dt</i>=130.(128/60)<i>e</i><sup>130<i>t</i></sup>+70.(-68/60)<i>e</i><sup>70<i>t</i></sup>.</span>
