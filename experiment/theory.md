@@ -5,7 +5,7 @@
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i.) <i>E</i>: collection of differentiable function <br>
 (ii.) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
 (iii.) <i>D</i>: <i>d</i>/<i>dx</i> <br>
-(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>) i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
+(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 <br>
 This experiment is not focused on learning the standard method of solution.</span>
 
