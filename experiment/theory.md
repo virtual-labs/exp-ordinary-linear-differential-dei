@@ -71,7 +71,7 @@ In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all so
 Substituting the value of <i>y</i>(<i>x</i>) obtained above, in the given differential equation, it comes out to be equal to 2<i>e</i><sup><i>x</i></sup> which is the R.H.S. of the given differential equation. <br>
 <b>Understanding of complete integral:</b>  <br>
 This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. <br>
-The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is T(y)=2ex. The solution set of linear map equation is the solution set of the given differential equation. </span>
+The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is <i>T</i>(<i>y</i>)=2<i>e</i><sup><i>x</i></sup>. The solution set of linear map equation is the solution set of the given differential equation. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">6. Example (Engineering problem):</span>**
 
