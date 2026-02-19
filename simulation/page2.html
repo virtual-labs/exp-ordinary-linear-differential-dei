@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="js/page2.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/main_style.css">
+
+</head>
+
+<style>
+
+    .ques{
+		color: blue;
+	}
+
+    label{
+		color: blue;
+        font-size: 32px;
+	}
+
+    #head3{
+        height:auto;
+        width:100%;
+        text-align: center;
+        background-color:#b9c1b7;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+        padding: 0px 5px;
+        
+    }
+    .subbtnn2{
+    height:auto;
+    width:100%;
+    text-align: center;
+    background-color:#7dc0d6;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border: 1px solid teal;
+    margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+       
+    }
+   
+</style>
+<body>
+    
+    <h2 class="pagehead">Ordinary Linear Differential Equations</h2>
+
+<div class="container">
+    <button class="subbtn" id="solbtn" >Example</button> <br>
+   
+
+    <p>Enter values of <i>a, b</i> and <i>c</i> such that <i>b</i><sup>2</sup>-4<i>ac</i> &ge; 0 is a perfect square and <i>a</i>&ne;0. <span style="font-size: 20px;">(For example, choose <i>a</i>=1, <i>b</i>=5 and <i>c</i>=4 or <i>a</i>=2, <i>b</i>=10 and <i>c</i>=8)</span></p>
+
+    <form id="checkForm">
+        <input type="number" id="a" name="a" placeholder="a" min="1" required> 
+        <label for="a">\(\frac{d^2y}{dx^2} + \)</label> 
+        <input type="number" id="b" name="b" placeholder="b" required> 
+        <label for="b">\(\frac{dy}{dx} + \)</label> 
+        <input type="number" id="c" name="c" placeholder="c" required> = 0 <br> 
+         
+        <button type="submit">Submit</button>
+        
+    </form>
+
+    <p class="head1" id="head1"><strong>Solution</strong></p>
+    <p id="auxEq"></p>
+    <p id="roots"></p>
+    <p id="result"></p>
+    <p id="PI"></p>
+    <p id="CI"></p>
+        
+</div>
+
+<p style="float: center; align-content:right;">
+    <a href="./index.html" class="previous">&laquo; Previous</a></p>
+
+<p style="float: center; align-content:right;">
+<a href="./self-assessment.html" class="next" >Next Page &raquo;</a></p>
+
+</body>
+
+</html>
+
+
+
+
+
+
