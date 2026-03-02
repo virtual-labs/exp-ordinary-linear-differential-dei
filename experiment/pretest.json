@@ -4,32 +4,32 @@
         {
             "question": "Which of the following is a differential equation",
             "answers": {
-                "a": "dy/dx+3x",
-                "b": "dy/dx+loge<sup>y</sup>",
-                "c": "dy/dx+cos(dy/dx)",
-                "d": "x<sup>2</sup> + log y=0"
+                "a": "$dy/dx+3x$",
+                "b": "$dy/dx+loge^{y}$",
+                "c": "$dy/dx+$cos$(dy/dx)$",
+                "d": "$x^{2} +$ log $y=0$"
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
         },
         {
-            "question": "If y=sec<sup>2</sup>x+3, then which of the following is true",
+            "question": "If $y=$sec<sup>2</sup>$x+3$, then which of the following is true",
             "answers": {
-                "a": "dy/dx=-cosecx.(tanx)",
-                "b": "dy/dx=2secx+3",
-                "c": "dy/dx=2secx.(tanx)",
-                "d": "dy/dx = 2sec<sup>2</sup>x· tanx"
+                "a": "$dy/dx=-$cosec$x$.(tan$x$)",
+                "b": "$dy/dx=2$sec$x+3$",
+                "c": "$dy/dx=2$sec$x$.(tan$x$)",
+                "d": "$dy/dx = 2$sec<sup>2</sup>$x·$ tan$x$"
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
         },
         {
-            "question": "If dy/dx=2x+3, then which of the following cannot be true:",
+            "question": "If $dy/dx=2x+3$, then which of the following cannot be true:",
             "answers": {
-                "a": "y=2",
-                "b": "y=x<sup>2</sup>+3x",
-                "c": "y=x<sup>2</sup>+3x+log(529)",
-                "d": "y = x<sup>2</sup> +e<sup>2</sup>"
+                "a": "$y=2$",
+                "b": "$y=x^{2}+3x$",
+                "c": "$y=x^{2}+3x+$log(529)",
+                "d": "$y = x^{2} +e{2}$"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
@@ -37,16 +37,16 @@
         {
             "question": "Which of the following is true",
             "answers": {
-                "a": "d/dx operates on f(x) and on 2",
-                "b": "d/dx operates on f(x) but not on 2",
-                "c": "d/dx operates on 2 but not on f(x)",
-                "d": "d)d/dx does not operate on both f(x) and 2"
+                "a": "$d/dx$ operates on $f(x)$ and on 2",
+                "b": "$d/dx$ operates on $f(x)$ but not on 2",
+                "c": "$d/dx$ operates on 2 but not on $f(x)$",
+                "d": "$d)d/dx$ does not operate on both $f(x)$ and 2"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
         {
-            "question": "What are the order and the degree of the differential equation d<sup>2</sup>y/dx<sup>2</sup>+y.(dy/dx)<sup>3</sup>=4",
+            "question": "What are the order and the degree of the differential equation $d^{2}y/dx^{2}+y.(dy/dx)^{3}=4$",
             "answers": {
                 "a": "1 and 2",
                 "b": "2 and 1",
@@ -57,12 +57,12 @@
             "difficulty": "beginner"
         },
         {
-            "question": "If y=x<sup>3</sup>, then (dy/dx)<sup>2</sup>+d<sup>2</sup>y/dx<sup>2</sup> equals",
+            "question": "If $y=x^{3}$, then $(dy/dx)^{2}+d^{2}y/dx^{2}$ equals",
             "answers": {
-                "a": "9x<sup>2</sup>+6x",
-                "b": "9x<sup>4</sup>+6x",
-                "c": "3x<sup>4</sup>+3x",
-                "d": "6x<sup>2</sup>+9x"
+                "a": "$9x^{2}+6x$",
+                "b": "$9x^{4}+6x$",
+                "c": "$3x^{4}+3x$",
+                "d": "$6x^{2}+9x$"
             },
             "correctAnswer": "b",
             "difficulty": "beginner"
