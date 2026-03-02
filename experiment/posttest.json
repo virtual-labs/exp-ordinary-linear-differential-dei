@@ -53,7 +53,7 @@
       "difficulty": "beginner"
     },
     {
-        "question": "Let $T(y)=r$ be a linear map equation, where $T:F→F$ is the operator defined as $T=D^{2}+PD+QI$ and $P$, $Q&isin;R$. Then its solution is",
+        "question": "Let $T(y)=r$ be a linear map equation, where $T:F→F$ is the operator defined as $T=D^{2}+PD+QI$ and $P$, $Q$&isin;$R$. Then its solution is",
       "answers": {
         "a": "$y_{0}+kerT$",
         "b": "$y_{0}$",
@@ -70,12 +70,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The function c_{1}e^{5x}+c_{2}e^{4x}+e^{x} is the complete integral and then it satisfies which of the following differential equation",
+      "question": "The function $c_{1}e^{5x}+c_{2}e^{4x}+e^{x}$ is the complete integral and then it satisfies which of the following differential equation",
        "answers": {
         "a": "$y$’’$-9y$’$+20y=2e^{x}$",
         "b": "$y$’’$-5y$’$+20y=0$",
-        "c": "$y$’’$-4y$’$+5y=e^{x}",
-        "d": "$y$’’$-9y$’$+20y=12e^{x}"
+        "c": "$y$’’$-4y$’$+5y=e^{x}$",
+        "d": "$y$’’$-9y$’$+20y=12e^{x}$"
       },
        "explanations": {
                 "a": "Incorrect. Follows by definition.",
