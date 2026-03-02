@@ -46,7 +46,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The function c1e5x+c2e4x+ex is the complete integral and then it satisfies which of the following differential equation",
+      "question": "The function c<sub>1</sub>e<sup>5x</sup>+c<sub>2</sub>e<sup>4x</sup>+e<sup>x</sup> is the complete integral and then it satisfies which of the following differential equation",
        "answers": {
         "a": "y’’-9y’+20y=2e<sup>x</sup>",
         "b": "y’’-5y’+20y=0",
