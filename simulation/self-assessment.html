@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Assessment</title>
+  <script defer src="js/self_assessment.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <link rel="stylesheet" type="text/css" href="css/self_assessment.css">
+  
+</head>
+
+<body>
+    <h2 class="pagehead">Ordinary Linear Differential Equations</h2>
+  <div class="container">
+
+    <button class="subbtn" id="solbtn" >Self-Assessment</button><br><br>
+
+    <div class="question" data-answer="yes">
+      <p>&#9679; Complementary Function provides all solution of second order homogeneous linear differential equation with constant co-efficients:</p>
+      <div class="answer-buttons">
+        <button onclick="checkAnswer(this, 'yes')">True</button>
+        <button onclick="checkAnswer(this, 'no')">False</button>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <div class="question" data-answer="yes">
+      <p>&#9679; Particular Integral provides only one solution of second order linear differential equation with constant co-efficients:</p>
+      <div class="answer-buttons">
+        <button onclick="checkAnswer(this, 'yes')">True</button>
+        <button onclick="checkAnswer(this, 'no')">False</button>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <div class="question" data-answer="no">
+      <p>&#9679; Particular Integral is always a non-constant function:</p>
+      <div class="answer-buttons">
+        <button onclick="checkAnswer(this, 'yes')">True</button>
+        <button onclick="checkAnswer(this, 'no')">False</button>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <div class="question" data-answer="no">
+      <p>&#9679; Complete Integral provides only one solution of differential equation:</p>
+      <div class="answer-buttons">
+        <button onclick="checkAnswer(this, 'yes')">True</button>
+        <button onclick="checkAnswer(this, 'no')">False</button>
+      </div>
+      <div class="result"></div>
+    </div>
+    
+    <div class="question" data-answer="yes">
+        <p>&#9679; Voltage in an <i>RLC</i> circuit can be represented by a linear differential equation:</p>
+        <div class="answer-buttons">
+          <button onclick="checkAnswer(this, 'yes')">True</button>
+          <button onclick="checkAnswer(this, 'no')">False</button>
+        </div>
+        <div class="result"></div>
+      </div>
+  </div>
+  
+  <p style="float: center; align-content:right;">
+    <a href="./page2.html" class="previous">&laquo; Previous</a></p>
+
+<p style="float: center; align-content:right;">
+  <a href="./Engineering Problem.html" class="next" >Next Page &raquo;</a></p>
+  
+</body>
+</html>

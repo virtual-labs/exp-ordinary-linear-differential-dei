@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main_style.css">
+    <title>Engineering Problem</title>
+
+    <style>
+      
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        label {
+            color: blue;
+            font-size: 24px;
+            display: block;
+            margin-top: 1rem;
+        }
+        input[type="range"] {
+            width: 50%;
+            margin: 0.5rem 0;
+        }
+        .value-display {
+            font-size: 1.2rem;
+            color: darkgreen;
+            font-weight: bold;
+        }
+        .submitbtn{
+            width: 15%;
+            border: 1px solid black;
+            background-color: rgb(196, 179, 179);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="pagehead">Mathematical Formulation of Engineering Problems</h2>
+    <div class="container">
+        <button class="subbtn" id="solbtn" >Example</button>
+        <p>Drag the sliders to choose the values of <i>R, L</i> and <i>C</i> in a given <i>RLC</i> circuit for the evaluation of charge/current</p>
+        <div class="controls">
+            <label for="resistance"><i>R</i> (Resistance in Ω): <span class="value-display" id="resistance-value">10</span></label>
+            <input type="range" id="resistance" value="10" min="0" max="100">
+
+            <label for="inductance"><i>L</i> (Inductance in H): <span class="value-display" id="inductance-value">0.1</span></label>
+            <input type="range" id="inductance" value="0.1" min="0" max="1" step="0.01">
+
+            <label for="capacitance"><i>C</i> (Capacitance in F): <span class="value-display" id="capacitance-value">0.001</span></label>
+            <input type="range" id="capacitance" value="0.001" min="0" max="0.01" step="0.0001">
+<br>
+            
+        </div>
+
+        <canvas id="rlcCircuit" width="600" height="400" style="border: 1px solid black;"></canvas>
+
+         <input class="submitbtn" type="submit" onclick="updateEquation()">
+        <p class="head1" id="head1" style="display: none;"><strong>Mathematical Formulation</strong></p>
+        <p id="auxEq2" style="display: none;">Charge <i>Q</i> is given by:</p>
+        <p id="auxEq" style="display: none; font-size: 21px;"></p>
+        <p id="note" style="display: none; font-size: 25px;"><span style="color: blue;">Note:</span> Solution of above equation can be obtained using standard method.</p>
+        
+    </div>
+
+    <p style="float: center; align-content:right;">
+        <a href="./self-assessment.html" class="previous">&laquo; Previous</a></p>
+    <script>
+        const canvas = document.getElementById('rlcCircuit');
+        const ctx = canvas.getContext('2d');
+
+        ctx.lineWidth = 3.5;
+        ctx.font = '16px Arial';
+
+        function drawResistor(x, y) {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            const segmentWidth = 6;
+            const segmentHeight = 10;
+            for (let i = 0; i < 10; i++) {
+                if (i % 2 === 0) {
+                    ctx.lineTo(x + segmentWidth * (i + 1), y - segmentHeight);
+                } else {
+                    ctx.lineTo(x + segmentWidth * (i + 1), y + segmentHeight);
+                }
+            }
+            ctx.lineTo(x + segmentWidth * 11, y);
+            ctx.stroke();
+        }
+
+        function drawCircuit(R, L, C) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.moveTo(200, 100);
+            ctx.lineTo(90, 100);
+            ctx.moveTo(265, 100);
+            ctx.lineTo(450, 100);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(450, 210);
+            ctx.lineTo(450, 300);
+            ctx.moveTo(450, 100);
+            ctx.lineTo(450, 150);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(260, 300);
+            ctx.lineTo(90, 300);
+            ctx.moveTo(450, 300);
+            ctx.lineTo(280, 300);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(150, 300);
+            ctx.lineTo(150, 100);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(90, 180);
+            ctx.lineTo(90, 100);
+            ctx.moveTo(90, 300);
+            ctx.lineTo(90, 200);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(60, 200);
+            ctx.lineTo(120, 200);
+            ctx.moveTo(70, 180);
+            ctx.lineTo(110, 180);
+            ctx.fillText('-', 52, 185);
+            ctx.fillText('+', 48, 205);
+            ctx.fillText('5 V', 50, 230);
+            ctx.stroke();
+
+            drawResistor(200, 100);
+            ctx.fillText(`𝑹 = ${R} Ω`, 270, 80);
+
+            ctx.beginPath();
+            ctx.moveTo(260, 270);
+            ctx.lineTo(260, 330);
+            ctx.moveTo(280, 270);
+            ctx.lineTo(280, 330);
+            ctx.stroke();
+            ctx.fillText(`𝑪 = ${C} F`, 300, 320);
+
+            const img = new Image();
+            img.src = 'images/inductor-line-icon-lg.png';
+            img.onload = () => {
+                ctx.drawImage(img, 407, 140, 75, 75);
+                ctx.fillText(`𝑳 = ${L} H`, 470, 220);
+            };
+
+            ctx.fillStyle = 'black';
+            ctx.font = '18px Arial';
+            ctx.fillText('𝑹 𝑳 𝑪 Circuit', 250, 40);
+        }
+
+        function updateCircuit() {
+            const R = parseFloat(document.getElementById("resistance").value);
+            const L = parseFloat(document.getElementById("inductance").value);
+            const C = parseFloat(document.getElementById("capacitance").value);
+
+            document.getElementById('resistance-value').textContent = R;
+            document.getElementById('inductance-value').textContent = L.toFixed(2);
+            document.getElementById('capacitance-value').textContent = C.toFixed(4);
+
+            drawCircuit(R, L, C);
+        }
+
+        document.getElementById('resistance').addEventListener('input', updateCircuit);
+        document.getElementById('inductance').addEventListener('input', updateCircuit);
+        document.getElementById('capacitance').addEventListener('input', updateCircuit);
+
+        drawCircuit(10, 0.1, 0.001);
+    </script>
+
+<script>
+ 
+ function updateEquation() {
+    const R = parseFloat(document.getElementById("resistance").value);
+    const L = parseFloat(document.getElementById("inductance").value);
+    const C = parseFloat(document.getElementById("capacitance").value);
+
+    // Format the equation
+    const equation = `
+        \\[
+        ${R} \\frac{d^2Q}{dt^2} + ${L} \\frac{dQ}{dt} + ${C}  = 5
+        \\]
+    `;
+    
+    // Update the equation in the HTML
+    document.getElementById("auxEq").innerHTML = equation;
+    
+
+    // Render the equation using MathJax
+    MathJax.typeset();
+    document.getElementById("auxEq").style.display= "block";
+    document.getElementById("head1").style.display= "block";
+    document.getElementById("note").style.display= "block";
+    document.getElementById("auxEq2").style.display= "block";
+}
+
+
+// Initial call to set the default equation
+updateEquation();
+
+    
+    
+</script>
+</body>
+</html>

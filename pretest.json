@@ -1,0 +1,107 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "Which of the following is a differential equation",
+            "answers": {
+                "a": "$dy/dx+3x$",
+                "b": "$dy/dx+loge^{y}$",
+                "c": "$dy/dx+$cos$(dy/dx)$",
+                "d": "$x^{2} +$ log $y=0$"
+            },
+             "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Correct. Follows by definition."
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "If $y=$sec<sup>2</sup>$x+3$, then which of the following is true",
+            "answers": {
+                "a": "$dy/dx=-$cosec$x$.(tan$x$)",
+                "b": "$dy/dx=2$sec$x+3$",
+                "c": "$dy/dx=2$sec$x$.(tan$x$)",
+                "d": "$dy/dx = 2$sec<sup>2</sup>$x·$ tan$x$"
+            },
+            "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Correct. Follows by definition."
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "If $dy/dx=2x+3$, then which of the following cannot be true:",
+            "answers": {
+                "a": "$y=2$",
+                "b": "$y=x^{2}+3x$",
+                "c": "$y=x^{2}+3x+$log(529)",
+                "d": "$y = x^{2} +e{2}$"
+            },
+            "explanations": {
+                "a": "Correct. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following is true",
+            "answers": {
+                "a": "$d/dx$ operates on $f(x)$ and on 2",
+                "b": "$d/dx$ operates on $f(x)$ but not on 2",
+                "c": "$d/dx$ operates on 2 but not on $f(x)$",
+                "d": "$d)d/dx$ does not operate on both $f(x)$ and 2"
+            },
+             "explanations": {
+                "a": "Correct. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What are the order and the degree of the differential equation $d^{2}y/dx^{2}+y.(dy/dx)^{3}=4$",
+            "answers": {
+                "a": "1 and 2",
+                "b": "2 and 1",
+                "c": "1 and 3",
+                "d": "2 and 3"
+            },
+             "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Correct. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "If $y=x^{3}$, then $(dy/dx)^{2}+d^{2}y/dx^{2}$ equals",
+            "answers": {
+                "a": "$9x^{2}+6x$",
+                "b": "$9x^{4}+6x$",
+                "c": "$3x^{4}+3x$",
+                "d": "$6x^{2}+9x$"
+            },
+             "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Correct. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        }
+    ]
+}
