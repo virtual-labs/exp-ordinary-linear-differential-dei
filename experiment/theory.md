@@ -2,10 +2,9 @@
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Notation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) <i>E</i>: collection of differentiable function <br>
-(ii) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
-(iii) <i>D</i>: <i>d</i>/<i>dx</i> <br>
-(iv) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) <i>F</i>: collection of twice differentiable functions from <i>R</i> to <i>R</i> <br>
+(ii) <i>D</i>: <i>d</i>/<i>dx</i> <br>
+(iii) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 <br>
 </span>
 
@@ -13,16 +12,15 @@
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">The equation <br>
 <i>y</i>’’+<i>Py</i>’+<i>Qy</i>=<i>f</i>(<i>x</i>) 					…(i) <br>
-is a second order linear differential equation with constant coefficients, where <i>P, Q</i>&isin;<i>R</i> and <i>f</i>:<i>R</i>→<i>R</i> is a continuous function. If <i>f</i>(<i>x</i>)=0, then such equation is called a homogeneous second order linear differential equation with constant coefficients.
+is a second order linear differential equation with constant coefficients, where <i>P, Q</i>&isin;<i>R</i> and <i>f</i>:<i>R</i>→<i>R</i> is a continuous function. If <i>f</i>(<i>x</i>)=0, then this equation is called a homogeneous second order linear differential equation with constant coefficients.
 It is well known that linear ordinary differential equations with constant coefficients are used in solving engineering problems.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Standard method of solution:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">In this section, we present the standard method to obtain the solution of equation (i). 
-<br> 
-Consider the equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0, which is called the auxiliary equation. Then <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by <i>y</i><sub><i>c</i></sub>. <br><br>
-A specific function <i>g</i>(<i>x</i>) which satisfies equation (<i>i</i>) is called particular integral (P.I.) and is denoted by <i>y</i><sub><i>p</i></sub>. Any solution of equation (<i>i</i>) is of the form <i>y</i>(<i>x</i>)≡<i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>=<i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>+<i>g</i>(<i>x</i>). This is called the complete integral (C.I.). <br><br>
-In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all solutions of equation (<i>i</i>), so that C.I.=C.F, that is its solution is given by <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where  <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and  <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0 <br><br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">To find solutions of equation (i),
+consider the equation <i>am</i><sup>2</sup>+<i>bm</i>+<i>c</i>=0, which is called the auxiliary equation. Then <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants and <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> are the roots of the auxiliary equation is known as complementary function (C.F.) and is denoted by <i>y</i><sub><i>c</i></sub>. 
+A specific function <i>g</i>(<i>x</i>) which satisfies equation (<i>i</i>) is called the particular integral (P.I.) and is denoted by <i>y</i><sub><i>p</i></sub>. Any solution of equation (<i>i</i>) is of the form <i>y</i>(<i>x</i>)≡<i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>=<i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup>+<i>g</i>(<i>x</i>). This is called the complete integral (C.I.). <br><br>
+In particular, if <i>f</i>(<i>x</i>)=0, then the complementary function gives all solutions of equation (<i>i</i>), so that C.I.=C.F, that is solutions are given by <i>y</i>(<i>x</i>) = <i>c</i><sub>1</sub><i>e</i><sup><i>m</i></sup><sub>1</sub><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup><i>m</i></sup><sub>2</sub><sup><i>x</i></sup> <br><br>
 <b>Note.</b> There are typical approaches for calculating particular integral, but here we will consider hit and trial approach only. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Examples and explanation matrix:</span>**<br>
@@ -34,17 +32,17 @@ In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all so
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4.2 Summary:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Examples given in Section 4.1 are summarized in explanation matrix given below.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Examples given above are summarized in the explanation matrix given below.</span>
 ![Summary](images/exp10imageaddition.PNG "Summary")
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5. Understanding:</span>** <br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.1. Collection of differentiable functions as a vector space:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Collection of differentiable functions <i>E</i> from <i>R</i> to <i>R</i> is a vector space over <i>R</i> with addition and scalar multiplication of functions.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Collection of twice differentiable functions <i>F</i> from <i>R</i> to <i>R</i> is a vector space over <i>R</i> with addition and scalar multiplication of functions.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.2. Derivative as an operator:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Notion of derivative is well known. It operates on functions. Thus <i>d</i>/<i>dx</i> is a function from the collection of differentiable functions to collection of functions. It is denoted by <i>D</i> and is called differential operator.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Notion of derivative is well known. It operates on functions. Thus <i>d</i>/<i>dx</i> is a function from the collection of twice differentiable functions to collection of functions. It is denoted by <i>D</i> and is called differential operator.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.3. Operator defined by differential equation:</span>**
 
@@ -52,11 +50,11 @@ In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all so
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.4. Linear map equation defined by a given differential equation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then this can be written as <i>T</i>(<i>y</i>)=<i>r</i>, where <i>T</i>:<i>F</i>→<i>F</i> is the operator as defined in Section 5.3 so that <i>T</i>=<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i>. This is the desired linear map equation <i>T</i>(<i>y</i>)=<i>r</i> given by the differential equation.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then this can be written as <i>T</i>(<i>y</i>)=<i>r</i>, where <i>T</i>:<i>F</i>→<i>F</i> is the operator as defined in Section 5.3 so that <i>T</i>=<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i>. This is the linear map equation <i>T</i>(<i>y</i>)=<i>r</i> obtained by given differential equation.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.5. Solution of differential equation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall that solution set of a linear map <i>T</i>(<i>y</i>)=<i>r</i>, as described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that linear map equation is just another form of the given differential equation. Therefore its solutions are also the solution of given differential equation.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall from Experiment 7 that the solution set of the linear map <i>T</i>(<i>y</i>)=<i>r</i> described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that the linear map equation is just another form of the given differential equation. Therefore its solutions are also the solution of given differential equation.</span>
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">As given in Section 3, a solution of linear differential equation is given by <i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>, where <i>y</i><sub><i>c</i></sub> is a solution of the homogenous counterpart of the given differential equation and <i>y</i><sub><i>c</i></sub> is a particular solution of the given differential equation. Here it may be noted that <i>y</i><sub><i>p</i></sub> corresponds to <i>y</i><sub><i>o</i></sub> and <i>y</i><sub><i>c</i></sub> corresponds to an element of ker<i>T</i>.</span>
 
@@ -70,8 +68,7 @@ In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all so
 <b>Verification:</b>  <br>
 Substituting the value of <i>y</i>(<i>x</i>) obtained above, in the given differential equation, it comes out to be equal to 2<i>e</i><sup><i>x</i></sup> which is the R.H.S. of the given differential equation. <br>
 <b>Understanding of complete integral:</b>  <br>
-This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. <br>
-The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is <i>T</i>(<i>y</i>)=2<i>e</i><sup><i>x</i></sup>. The solution set of linear map equation is the solution set of the given differential equation. </span>
+The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is <i>T</i>(<i>y</i>)=2<i>e</i><sup><i>x</i></sup>. The solution set of linear map equation is the solution set of the given differential equation. This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">6. Example (Engineering problem):</span>**
 
