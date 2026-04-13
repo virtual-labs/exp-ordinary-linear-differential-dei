@@ -1,4 +1,4 @@
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Ordinary linear differential equations with constant coefficients are extensively used in solving engineering problems. This experiment helps in building a clear understanding of the mathematical concepts used in the standard method for finding solutions of these equations.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Ordinary linear differential equations with constant coefficients are extensively used in solving engineering problems. This experiment helps in building a clear understanding of the mathematical concepts of linear algebra used in the standard method for finding solutions of these equations. This experiment is not focused on learning the standard method of solution.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Notation:</span>**
 
@@ -7,7 +7,7 @@
 (iii.) <i>D</i>: <i>d</i>/<i>dx</i> <br>
 (iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 <br>
-This experiment is not focused on learning the standard method of solution.</span>
+</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2. Second order linear differential equation:</span>**
 
