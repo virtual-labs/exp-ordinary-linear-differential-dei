@@ -2,10 +2,10 @@
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Notation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(i.) <i>E</i>: collection of differentiable function <br>
-(ii.) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
-(iii.) <i>D</i>: <i>d</i>/<i>dx</i> <br>
-(iv.) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) <i>E</i>: collection of differentiable function <br>
+(ii) <i>F</i>: function from <i>R</i> to <i>R</i> <br>
+(iii) <i>D</i>: <i>d</i>/<i>dx</i> <br>
+(iv) <i>D</i><sup>2</sup>: <i>d</i>/<i>dx</i>(<i>d</i>/<i>dx</i>), i.e. <i>d</i><sup>2</sup>/<i>dx</i><sup>2</sup> 
 <br>
 </span>
 
@@ -28,9 +28,9 @@ In particular, if <i>f</i>(<i>x</i>)=0, then complementary function gives all so
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Examples and explanation matrix:</span>**<br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4.1. Examples:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(i.) Let <i>y</i>’’-<i>y</i>=0 be a homogeneous second order linear differential equation. Then <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>), which implies that (<i>D</i><sup>2</sup>-<i>I</i>)<i>y</i>=0. Clearly auxiliary equation is <i>m</i><sup>2</sup>-1=0, thus <i>m</i>=1, -1. Then the complementary function and hence the complete integral of this equation is <i>c</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Let <i>y</i>’’-<i>y</i>=0 be a homogeneous second order linear differential equation. Then <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>), which implies that (<i>D</i><sup>2</sup>-<i>I</i>)<i>y</i>=0. Clearly auxiliary equation is <i>m</i><sup>2</sup>-1=0, thus <i>m</i>=1, -1. Then the complementary function and hence the complete integral of this equation is <i>c</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.
 <br>
-(ii.) Let <i>y</i>’’-<i>y</i>=2sin<i>x</i> be the second order linear differential equation. Let <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>). Then (<i>D</i><sup>2</sup>-1)<i>y</i>=2sin<i>x</i>, <i>y</i>=-sin<i>x</i> satisfies this equation. It can be seen that -sin<i>x</i> is a particular integral of this equation. Thus complete integral is <i>C</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>C</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup> -sin<i>x</i>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.</span>
+(ii) Let <i>y</i>’’-<i>y</i>=2sin<i>x</i> be the second order linear differential equation. Let <i>y</i>’’=<i>D</i><sup>2</sup>(<i>y</i>). Then (<i>D</i><sup>2</sup>-1)<i>y</i>=2sin<i>x</i>, <i>y</i>=-sin<i>x</i> satisfies this equation. It can be seen that -sin<i>x</i> is a particular integral of this equation. Thus complete integral is <i>C</i><sub>1</sub><i>e</i><sup><i>x</i></sup>+<i>C</i><sub>2</sub><i>e</i><sup>-<i>x</i></sup> -sin<i>x</i>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4.2 Summary:</span>**
 
