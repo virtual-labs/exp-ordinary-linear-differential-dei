@@ -54,18 +54,18 @@ In particular, if <i>f</i>(<i>x</i>)=0, then the complementary function gives al
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.5. Solution of differential equation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall from Experiment 7, that the solution set of the linear map <i>T</i>(<i>y</i>)=<i>r</i> described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that the linear map equation is just another form of the given differential equation. Therefore its solutions are also the solutions of given differential equation.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall from Experiment 7, that the solution set of the linear map <i>T</i>(<i>y</i>)=<i>r</i> described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that the linear map equation is just another form of the given differential equation. Therefore its solutions are same as the solutions of the given differential equation.</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">As given in Section 3, a solution of linear differential equation is given by <i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>, where <i>y</i><sub><i>c</i></sub> is a solution of the homogenous counterpart of the given differential equation and <i>y</i><sub><i>c</i></sub> is a particular solution of the given differential equation. Here it may be noted that <i>y</i><sub><i>p</i></sub> corresponds to <i>y</i><sub><i>o</i></sub> and <i>y</i><sub><i>c</i></sub> corresponds to an element of ker<i>T</i>.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.6. Example: </span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’-5<i>y</i>’+6<i>y</i>=2<i>e</i><sup><i>x</i></sup> be the given differential equation. <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’-5<i>y</i>’+6<i>y</i>=2<i>e</i><sup><i>x</i></sup> be the given second order linear differential equation. <br>
 <b>Standard method for solution:</b> <br>
 (a) The auxiliary equation is <i>m</i><sup>2</sup>-5<i>m</i>+6=0, i.e. (<i>m</i>-2)(<i>m</i>-3)=0. Thus <i>m</i>=2, 3. Then the complementary function of the given differential equation is c<sub>1</sub>e<sup>3x</sup>+c<sub>2</sub>e<sup>2x</sup>, where<i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. <br>
 (b) Clearly <i>y</i>=<i>e</i><sup><i>x</i></sup> satisfies the given differential equation. Thus <i>e</i><sup><i>x</i></sup> is a particular integral. <br>
 (c) Thus complete integral <i>y</i>(<i>x</i>)=<i>c</i><sub>1</sub><i>e</i><sup>3<i>x</i></sup>+<i>c</i><sub>2</sub><i>e</i><sup>2<i>x</i></sup>+<i>e</i><sup><i>x</i></sup>, where <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> are constants. <br>
 <b>Verification:</b>  <br>
-Substituting the value of <i>y</i>(<i>x</i>) obtained above, in the given differential equation, it comes out to be equal to 2<i>e</i><sup><i>x</i></sup> which is the R.H.S. of the given differential equation. <br>
+Substituting the value of <i>y</i>(<i>x</i>) obtained above, in the given differential equation, L.H.S. comes out to be equal to 2<i>e</i><sup><i>x</i></sup> which is the R.H.S. <br>
 <b>Understanding of complete integral:</b>  <br>
 The linear map arising out of the given differential equation is <i>T</i>≡<i>D</i><sup>2</sup>-5<i>D</i>+6<i>I</i> and the linear map equation is <i>T</i>(<i>y</i>)=2<i>e</i><sup><i>x</i></sup>. The complete integral obtained above is the 
 solution set of this linear map equation, as solutions of differential equation and induced  linear map equation are same. This provides an illustration of the understanding provided in Section 5, i.e understanding as to why the standard method as given in Section 3 provides all solutions of the given differential equation. </span>
