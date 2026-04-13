@@ -50,7 +50,7 @@ In particular, if <i>f</i>(<i>x</i>)=0, then the complementary function gives al
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.4. Linear map equation defined by a given differential equation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then this can be written as <i>T</i>(<i>y</i>)=<i>r</i>, where <i>T</i>:<i>F</i>→<i>F</i> is the operator as defined in Section 5.3 so that <i>T</i>=<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i>. This is the desired linear map equation obtained from the given differential equation.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>y</i>’’+<i>py</i>’+<i>qy</i>=<i>f</i>(<i>x</i>), where <i>p, q</i>&isin;<i>R</i> be a given linear differential equation of second order. Then this can be written as <i>T</i>(<i>y</i>)=<i>r</i>, where <i>T</i>:<i>F</i>→<i>F</i> is the operator <i>T</i>=<i>D</i><sup>2</sup>+<i>pD</i>+<i>qI</i> defined in Section 5.3. This is the desired linear map equation obtained from the given differential equation.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.5. Solution of differential equation:</span>**
 
