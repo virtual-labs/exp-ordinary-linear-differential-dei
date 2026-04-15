@@ -38,11 +38,11 @@ In particular, if <i>f</i>(<i>x</i>)=0, then the complementary function gives al
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5. Understanding:</span>** <br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.1. Collection of differentiable functions as a vector space:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Collection of twice differentiable functions <i>F</i> from <i>R</i> to <i>R</i> is a vector space over <i>R</i> with addition and scalar multiplication of functions.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Collection <i>F</i> of twice differentiable functions from <i>R</i> to <i>R</i> is a vector space over <i>R</i> with addition and scalar multiplication of functions.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.2. Derivative as an operator:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Notion of derivative is well known. It operates on functions. Thus <i>d</i>/<i>dx</i> is a function from the collection of twice differentiable functions to collection of functions. It is denoted by <i>D</i> and is called differential operator.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Notion of derivative is well known. It operates on functions. Thus <i>d</i>/<i>dx</i> is a function from the collection of twice differentiable functions to collection of functions. It is denoted by <i>D</i> and is called the differential operator.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.3. Operator defined by differential equation:</span>**
 
@@ -54,7 +54,7 @@ In particular, if <i>f</i>(<i>x</i>)=0, then the complementary function gives al
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.5. Solution of differential equation:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall from Experiment 7, that the solution set of the linear map <i>T</i>(<i>y</i>)=<i>r</i> described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that the linear map equation is just another form of the given differential equation. Therefore its solutions are same as the solutions of the given differential equation.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Recall from Experiment 7, that the solution set of the linear map equation <i>T</i>(<i>y</i>)=<i>r</i> described in Section 5.4, is <i>y</i><sub><i>o</i></sub>+ker<i>T</i>, where <i>y</i><sub><i>o</i></sub> is its particular solution and ker<i>T</i> is the collection of all solutions of <i>T</i>(<i>y</i>)=0. Notice that the linear map equation is just another form of the given differential equation. Therefore its solutions are same as the solutions of the given differential equation.</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">As given in Section 3, a solution of linear differential equation is given by <i>y</i><sub><i>c</i></sub>+<i>y</i><sub><i>p</i></sub>, where <i>y</i><sub><i>c</i></sub> is a solution of the homogenous counterpart of the given differential equation and <i>y</i><sub><i>c</i></sub> is a particular solution of the given differential equation. Here it may be noted that <i>y</i><sub><i>p</i></sub> corresponds to <i>y</i><sub><i>o</i></sub> and <i>y</i><sub><i>c</i></sub> corresponds to an element of ker<i>T</i>.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5.6. Example: </span>**
