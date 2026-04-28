@@ -30,7 +30,7 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
         const particularIntegral = "0"; // Homogeneous equation, so PI = 0
 
         // Step 4: Complementary Function (CF)
-        const complementaryFunction = `\\(y(x) =  c_₁e^{${root1}x} + c_₂e^{${root2}x}\\)`;
+        const complementaryFunction = `\\(y(x) =  c_₁e^{${root1}x} + c_₂e^{${root2}x},\\)`;
         const CI = `\\( c_₁e^{${root1}x} + c_₂e^{${root2}x}\\)`;
 
         // Step 5: Complete Integral (CI)
@@ -55,7 +55,7 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
          auxEq.innerHTML = auxiliaryEquation;
          roots.innerHTML = "<b id='head3'>Roots:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i>r</i><sub>1</sub> = "+root1+"; <i>r</i><sub>2</sub> = "+root2+" ";
         //  pi.innerHTML = "<b id='head3'>Particular Integral (PI) by Hit and Try:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; PI = 0";
-        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+" <br> <p style='text-align: center;'>where <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> are constants</p>";
+        ci.innerHTML = "<b id='head3'>All Solutions:</b> <br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CI = CF = "+CI+", <br> <p style='text-align: center;'>where <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> are constants</p>";
         MathJax.typesetPromise([ci]).catch(err => console.error(err));
         document.getElementById('head1').style.display ='block';
         document.getElementById('roots').style.display ='block';
