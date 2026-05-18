@@ -65,7 +65,7 @@ document.getElementById('checkForm').addEventListener('submit', function(event) 
         resultElement.style.color = 'black';
        
     } else {
-        resultElement.innerHTML = `The discriminant (<i>b</i>² - 4<i>ac</i>) is ${discriminant}, and it is not a perfect square.`;
+        resultElement.innerHTML = `The discriminant (<i>b</i>² - 4<i>ac</i>) is ${discriminant}, and it is not a perfect square. To proceed further, enter appropriate values.`;
         resultElement.style.color = 'red';
         document.getElementById('head1').style.display ='none';
         document.getElementById('roots').style.display ='none';

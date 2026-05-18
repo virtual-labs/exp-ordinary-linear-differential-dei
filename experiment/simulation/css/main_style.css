@@ -145,6 +145,7 @@ input{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
 }
 .s_lst{
     margin-left: 3rem;
@@ -159,4 +160,15 @@ input{
 }
 .p2{
     padding-left: 6rem;
+}
+@media (max-width: 768px){
+    .pagehead{
+        font-size: 28px;
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        width: 85%;
+        margin: 3.5rem auto 3rem auto;
+    }
 }
