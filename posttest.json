@@ -1,0 +1,90 @@
+{ 
+  "version": 2.0,
+  "questions": [
+   {
+      "question": "The value of differential operator $d^{2}y/dx^{2}$ of the equation $x^{2}+e^{3x}-y^{2}=0$",
+      "answers": {
+        "a": "$2+9e^{3x}-2 $",
+        "b": "$2x+3e^{3x}-2y$ ",
+        "c": "$2+3e^{3x}-2$",
+        "d": "$2x+3e^{3x}-2y=0$"
+      },
+      "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Correct. Follows by definition."
+            },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The complementary function of the differential equation $3y’’-12y=0$",
+      "answers": {
+        "a": "$c_{1}e^{2x}+c_{2}e^{-x}$",
+        "b": "$c_{1}e^{3x}+c_{2}e^{-2x}$",
+        "c": "$c_{1}e^{-2x}+c_{2}e^{2x}$",
+        "d": "$c_{1}e^{2x}+c_{2}e^{-3x}$"
+      },
+       "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Correct. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The complete integral of the differential equation $2y$’’$-3y=-$cos$x$",
+      "answers": {
+        "a": "cos$x$ ",
+        "b": "sin$x$",
+        "c": "-cos$x$ ",
+        "d": "-sin$x$"
+      },
+       "explanations": {
+                "a": "Correct. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+        "question": "Let $T(y)=r$ be a linear map equation, where $T:F→F$ is the operator defined as $T=D^{2}+PD+QI$ and $P$, $Q$&isin;$R$. Then its solution is",
+      "answers": {
+        "a": "$y_{0}+kerT$",
+        "b": "$y_{0}$",
+        "c": "$kerT$",
+        "d": "$y^{2}$"
+      },
+       "explanations": {
+                "a": "Correct. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Incorrect. Follows by definition."
+            },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The function $c_{1}e^{5x}+c_{2}e^{4x}+e^{x}$ is the complete integral and then it satisfies which of the following differential equation",
+       "answers": {
+        "a": "$y$’’$-9y$’$+20y=2e^{x}$",
+        "b": "$y$’’$-5y$’$+20y=0$",
+        "c": "$y$’’$-4y$’$+5y=e^{x}$",
+        "d": "$y$’’$-9y$’$+20y=12e^{x}$"
+      },
+       "explanations": {
+                "a": "Incorrect. Follows by definition.",
+                "b": "Incorrect. Follows by definition.",
+                "c": "Incorrect. Follows by definition.",
+                "d": "Correct. Follows by definition."
+            },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

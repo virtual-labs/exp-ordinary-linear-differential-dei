@@ -1,0 +1,47 @@
+
+.question {
+    margin-bottom: 20px;
+  }
+  .question p {
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  .answer-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .answer-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .answer-buttons button:hover {
+    background-color: #ddd;
+  }
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .correct {
+    color: green;
+  }
+  .incorrect {
+    color: red;
+  }
+
+  .highlighted {
+      background-color: #4CAF50; /* Green for correct */
+      color: white;
+  }
+
+  .result.correct {
+      color: green;
+  }
+
+  .result.incorrect {
+      color: red;
+  }
+ 

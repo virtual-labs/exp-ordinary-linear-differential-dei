@@ -1,0 +1,32 @@
+
+/home/runner/work/exp-ordinary-linear-differential-dei/exp-ordinary-linear-differential-dei/experiment/simulation/js/engineeringproblem.js
+  109:5  error  Parsing error: Unexpected token <
+
+/home/runner/work/exp-ordinary-linear-differential-dei/exp-ordinary-linear-differential-dei/experiment/simulation/js/main.js
+    3:10  warning  'ques1' is defined but never used    no-unused-vars
+   22:10  warning  'ques2' is defined but never used    no-unused-vars
+   41:10  warning  'ques3' is defined but never used    no-unused-vars
+   60:10  warning  'ques4' is defined but never used    no-unused-vars
+   80:10  warning  'ques4_1' is defined but never used  no-unused-vars
+   99:10  warning  'ques4_2' is defined but never used  no-unused-vars
+  118:10  warning  'ques5' is defined but never used    no-unused-vars
+  137:10  warning  'ques5_1' is defined but never used  no-unused-vars
+  160:10  warning  'unst_1' is defined but never used   no-unused-vars
+  179:10  warning  'unst_2' is defined but never used   no-unused-vars
+  198:10  warning  'unst_3' is defined but never used   no-unused-vars
+  217:10  warning  'unst_4' is defined but never used   no-unused-vars
+  236:10  warning  'unst_5' is defined but never used   no-unused-vars
+
+/home/runner/work/exp-ordinary-linear-differential-dei/exp-ordinary-linear-differential-dei/experiment/simulation/js/page2.js
+  37:15  warning  'completeIntegral' is assigned a value but never used  no-unused-vars
+  40:15  warning  'solutionElement' is assigned a value but never used   no-unused-vars
+  42:11  warning  'equation' is assigned a value but never used          no-unused-vars
+  48:11  warning  'pi' is assigned a value but never used                no-unused-vars
+  54:10  warning  'MathJax' is not defined                               no-undef
+  59:9   warning  'MathJax' is not defined                               no-undef
+
+/home/runner/work/exp-ordinary-linear-differential-dei/exp-ordinary-linear-differential-dei/experiment/simulation/js/self_assessment.js
+  2:10  warning  'checkAnswer' is defined but never used  no-unused-vars
+
+✖ 21 problems (1 error, 20 warnings)
+
